@@ -1,0 +1,71 @@
+.product-header {
+  position: relative;
+  height: 70vh;
+  width: 100%;
+  background-image: url("/assets/images/global-network.jpg"); /* ✅ change if needed */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 0 100px;
+}
+
+/* Overlay (dark purple like your design) */
+.product-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(43, 35, 80, 0.95),
+    rgba(43, 35, 80, 0.7),
+    rgba(43, 35, 80, 0.3)
+  );
+  z-index: 1;
+}
+
+/* Content */
+.product-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  max-width: 600px;
+}
+
+/* Small title */
+.product-small {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #d4af37;
+  margin-bottom: 15px;
+  display: block;
+}
+
+/* Heading */
+.product-content h1 {
+  font-size: 64px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Paragraph */
+.product-content p {
+  font-size: 18px;
+  color: white !important;
+  line-height: 1.6;
+}
+
+/* ✅ Mobile */
+@media (max-width: 768px) {
+  .product-header {
+    height: 60vh;
+    padding: 0 20px;
+  }
+
+  .product-content h1 {
+    font-size: 36px;
+  }
+
+  .product-content p {
+    font-size: 15px;
+  }
+}

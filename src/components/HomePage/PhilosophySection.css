@@ -1,0 +1,50 @@
+.philosophy-section {
+    padding: 80px 100px;
+  background: #fdf6f6;
+}
+
+.philosophy-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+/* Header */
+.philosophy-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.small-title {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #c5a46d;
+}
+
+.philosophy-header h2 {
+  font-size: 40px;
+  color: #2b2350;
+}
+
+.philosophy-content p {
+  font-size: 16px;
+  color: #2b2350;
+  max-width: 400px;
+  margin-bottom: 25px;
+}
+
+
+/* ✅ Mobile (stack vertically) */
+@media (max-width: 768px) {
+  .philosophy-section {
+    padding: 50px 20px;
+  }
+
+  .philosophy-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}

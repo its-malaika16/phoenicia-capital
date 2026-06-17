@@ -1,0 +1,71 @@
+.purpose-section {
+  padding: 80px 80px;
+  background: #f8f8fb;
+}
+
+/* ✅ GRID */
+.purpose-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+/* LEFT */
+.purpose-content {
+  max-width: 520px;
+}
+
+/* Small title */
+.purpose-small {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #c49a63;
+  display: block;
+  margin-bottom: 15px;
+}
+
+/* Heading */
+.purpose-content h2 {
+  font-size: 48px;
+  line-height: 1.2;
+  color: #2b2350;
+  margin-bottom: 25px;
+}
+
+/* Paragraphs */
+.purpose-content p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+/* Highlight words */
+.purpose-content strong {
+  color: #2b2350;
+}
+
+/* RIGHT IMAGE */
+.purpose-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+/* ✅ MOBILE */
+@media (max-width: 768px) {
+  .purpose-section {
+    padding: 50px 20px;
+  }
+
+  .purpose-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .purpose-content h2 {
+    font-size: 32px;
+  }
+}

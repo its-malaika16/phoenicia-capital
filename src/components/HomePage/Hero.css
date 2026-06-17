@@ -1,0 +1,149 @@
+.hero-container {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 100px; /* ✅ more spacing from left */
+  overflow: hidden;
+}
+
+/* SLIDER */
+.hero-slider {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.9s ease-in-out;
+}
+
+.hero-slide {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+}
+
+/* Overlay */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(60, 16, 83, 0.9),
+    rgba(60, 16, 83, 0.6),
+    rgba(60, 16, 83, 0.2),
+    transparent
+  );
+  z-index: 1;
+}
+
+/* Content */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* ✅ keep text left aligned */
+  max-width: 500px;
+  color: white;
+  z-index: 2;
+}
+
+/* Headings */
+.hero-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.hero-heading .gold {
+  color: #d4af37;
+}
+
+.hero-small {
+  font-size: 1rem;
+  color: #d4af37;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+/* Paragraph */
+.hero-paragraph {
+  font-size: 1.2rem;
+  color: #f0f0f0;
+  max-width: 550px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* ✅ FIX: center buttons under text */
+.hero-buttons {
+  display: flex;
+  justify-content: center; /* ✅ center horizontally */
+  width: 100%;
+  gap: 20px;
+}
+
+/* Buttons */
+.primary-btn,
+.secondary-btn {
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: none;
+}
+
+.primary-btn {
+  background-color: #C89B3C;
+  color: #28245f;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+.primary-btn:hover {
+  background-color: #bb933d;
+  color: #28245f;
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+
+}
+
+.secondary-btn {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.secondary-btn:hover {
+  background-color: transparent;
+  border: 2px solid #C89B3C;
+  color: #C89B3C;
+}
+
+
+/* Dots */
+.hero-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ffffff80;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dot.active {
+  background-color: #a855f7;
+  transform: scale(1.3);
+}

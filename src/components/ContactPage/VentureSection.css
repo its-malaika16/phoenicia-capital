@@ -1,0 +1,103 @@
+.ventures-section {
+    border-top: 1px solid #eee;
+  padding: 80px 100px;
+  background: #f8f8fb;
+}
+
+/* Header */
+.ventures-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.ventures-header span {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #c49a63;
+}
+
+.ventures-header h2 {
+  font-size: 34px;
+  color: #2b2350;
+  margin-top: 10px;
+}
+
+/* Grid */
+.ventures-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+/* Card */
+.venture-card {
+  background: white;
+  border: 1px solid #eee;
+  padding: 30px;
+  cursor: pointer;
+
+  display: flex;            /* ✅ important */
+  flex-direction: column;  /* stack vertically */
+  justify-content: space-between; /* ✅ keeps spacing equal */
+
+  height: 100%; /* ✅ same height for all */
+  transition: 0.3s ease;
+}
+
+
+/* Hover effect */
+.venture-card:hover {
+  transform: translateY(-5px);
+  border-color:  #c49a63;
+}
+
+/* Logo */
+.venture-logo img {
+  width: 40px;
+  margin-bottom: 20px;
+}
+
+/* Category */
+.venture-category {
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #c49a63;
+}
+
+/* Title */
+.venture-card h3 {
+  font-size: 22px;
+  color: #2b2350;
+  margin: 10px 0;
+}
+
+/* Subtitle */
+.venture-card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Visit link */
+.visit-link {
+  font-size: 13px;
+  font-weight: 600;
+  color: #2b2350;
+}
+
+.line{
+    width: 50px;
+    height: 1px;
+    background: #c49a63;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .ventures-section {
+    padding: 50px 20px;
+  }
+
+  .ventures-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,90 @@
+.values-section {
+  padding: 100px 100px;
+  background: #f4f4f7;
+  text-align: center;
+}
+
+/* HEADER */
+.values-header {
+  margin-bottom: 60px;
+}
+
+.values-small {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #c49a63;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.values-small .line {
+  width: 40px;
+  height: 1px;
+  background: #c49a63;
+}
+
+.values-header h2 {
+  font-size: 42px;
+  color: #2b2350;
+}
+
+/* ✅ GRID */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+/* ✅ CARD */
+.value-card {
+  background: #f4f4f7;
+  border: 1px solid #ddd;
+  padding: 40px 25px;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.value-card:hover {
+  transform: translateY(-5px);
+  border-color: #c49a63;
+}
+
+/* ICON */
+.value-icon {
+  font-size: 26px;
+  color: #c49a63;
+  margin-bottom: 15px;
+}
+
+/* TITLE */
+.value-card h3 {
+  font-size: 22px;
+  color: #2b2350;
+  margin-bottom: 10px;
+}
+
+/* TEXT */
+.value-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ✅ MOBILE */
+@media (max-width: 768px) {
+  .values-section {
+    padding: 60px 20px;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .values-header h2 {
+    font-size: 28px;
+  }
+}

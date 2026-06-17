@@ -1,0 +1,17 @@
+:root {
+  --primary-color: #0d1b2a;
+  --secondary-color: #d4af37;
+  --accent-color: #c89b3c;
+
+  --text-primary: #1a1a1a;
+  --text-secondary: #666666;
+
+  --background: #ffffff;
+  --section-bg: #f8f9fa;
+
+  --container-width: 1200px;
+
+  --border-radius: 10px;
+
+  --transition: all 0.3s ease;
+}

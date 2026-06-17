@@ -1,0 +1,146 @@
+/* MAIN SECTION */
+.founder-header {
+  background: #2b2350;
+  padding: 120px 100px;
+  color: white;
+}
+
+/* ✅ TOP LINE */
+.top-line {
+  width: 100%;
+  height: 1px;
+  background: rgba(255,255,255,0.15);
+  margin-bottom: 50px;
+}
+
+/* LAYOUT */
+.founder-container {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+/* LEFT SIDE */
+.founder-left {
+  max-width: 600px;
+}
+
+/* label */
+.label-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.line {
+  width: 30px;
+  height: 1px;
+  background: #d4af37;
+}
+
+.label {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #d4af37;
+}
+
+/* heading */
+.founder-left h1 {
+  font-size: 70px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.highlight {
+  color: #d4af37;
+  font-style: italic;
+}
+
+/* subtitle */
+.subtitle {
+  color: #cfcde6;
+  margin-bottom: 35px;
+}
+
+/* ✅ quote */
+.quote {
+  position: relative;
+  padding-left: 30px;
+}
+
+.quote-mark {
+  position: absolute;
+  left: 0;
+  top: -10px;
+  font-size: 40px;
+  color: rgba(255,255,255,0.15);
+}
+
+.quote p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #e4e3ef;
+}
+
+/* ✅ bottom line */
+.bottom-line {
+  width: 60%;
+  height: 1px;
+  background: rgba(255,255,255,0.2);
+  margin: 30px 0 10px;
+}
+
+/* author */
+.author {
+  font-size: 14px;
+  color: #d4af37;
+}
+
+/* RIGHT IMAGE */
+.founder-right {
+  position: relative;
+}
+
+.founder-right img {
+  width: 100%;
+  border-radius: 3px;
+}
+
+/* ✅ NAME CARD */
+.name-card {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: #3a2f65;
+  padding: 15px 20px;
+  border-left: 3px solid #d4af37;
+}
+
+.name-card h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.name-card span {
+  font-size: 12px;
+  color: #d4af37;
+  letter-spacing: 1px;
+}
+
+
+/* ✅ MOBILE */
+@media (max-width: 768px) {
+  .founder-header {
+    padding: 70px 20px;
+  }
+
+  .founder-container {
+    grid-template-columns: 1fr;
+  }
+
+  .founder-left h1 {
+    font-size: 36px;
+  }
+}

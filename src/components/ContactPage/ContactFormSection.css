@@ -1,0 +1,81 @@
+.contact-section {
+  padding: 80px 100px;
+  background: #f8f8fb;
+}
+
+/* ✅ GRID */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+/* LEFT */
+.contact-left p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 40px;
+}
+
+.contact-block {
+  margin-bottom: 25px;
+}
+
+.contact-block span {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #c49a63;
+}
+
+.contact-block h3 {
+  margin-top: 5px;
+  font-size: 20px;
+  color: #2b2350;
+}
+
+/* FORM */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  font-size: 14px;
+  background: transparent;
+  outline: none;
+}
+
+/* BUTTON */
+.submit-btn {
+  margin-top: 20px;
+  background: #2b2350;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: #3b2c7a;
+}
+
+/* ✅ MOBILE */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 50px 20px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
