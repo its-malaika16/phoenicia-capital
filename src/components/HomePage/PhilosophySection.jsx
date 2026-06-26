@@ -20,7 +20,7 @@ export default function PhilosophySection() {
                         We build and steward companies designed to outlast cycles: trusted brands, disciplined operations, and forward-thinking solutions that create long-term value for the clients and communities we serve.
                     </p>
 
-                    <span className="small-title" onClick={() => navigate("/about")}>
+                    <span className="small-title" onClick={() => navigate("/story")}>
                         READ OUR STORY →
                     </span>
                 </div>

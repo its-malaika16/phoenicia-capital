@@ -15,7 +15,7 @@ const products = [
       "Fast turnaround hiring",
     ],
     image: "/assets/images/teachwise.jpg",
-    url: "https://teachwise.co.uk"
+    url: "https://teachwise.co.uk",
   },
   {
     id: "02",
@@ -31,7 +31,7 @@ const products = [
       "Global field deployment",
     ],
     image: "/assets/images/petrovate.jpg",
-    url: "https://petrovate.co.uk"
+    url: "https://petrovate.co.uk",
   },
   {
     id: "03",
@@ -47,7 +47,7 @@ const products = [
       "Business solutions",
     ],
     image: "/assets/images/cedar-bank.jpg",
-    url: "https://cedarcapitalbank.com"
+    url: "https://cedarcapitalbank.com",
   },
   {
     id: "04",
@@ -63,20 +63,18 @@ const products = [
       "Real-time reporting",
     ],
     image: "/assets/images/cedar-payroll.jpg",
-    url: "https://cedarpayroll.co.uk"
-  }
+    url: "https://cedarpayroll.co.uk",
+  },
 ];
 
 export default function ProductsPageSection() {
   return (
     <section className="products-page">
-
       {products.map((product, index) => (
         <div
           key={product.id}
           className={`product-row ${index % 2 !== 0 ? "reverse" : ""}`}
         >
-
           {/* IMAGE */}
           <div className="product-image">
             <img src={product.image} alt={product.title} />
@@ -84,7 +82,6 @@ export default function ProductsPageSection() {
 
           {/* CONTENT */}
           <div className="product-content">
-
             <span className="product-top">
               {product.id} — {product.category}
             </span>
@@ -100,14 +97,18 @@ export default function ProductsPageSection() {
               ))}
             </ul>
 
-            <button className="visit-btn">
+            {/* ✅ FIXED BUTTON */}
+            <a
+              href={product.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="visit-btn"
+            >
               VISIT {product.title.toUpperCase()} →
-            </button>
-
+            </a>
           </div>
         </div>
       ))}
-
     </section>
   );
 }

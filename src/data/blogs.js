@@ -31,6 +31,47 @@ const blogs = [
     image: "/assets/images/cedar-payroll.jpg",
     description: "Cedar Payroll's latest release delivers real-time HMRC submissions, automated pension auto-enrolment, and a refreshed self-service portal for UK employees."
   },
+  {
+    id: "5",
+    title: "Phoenicia Capital Holdings Shares 2026 Outlook Across Its Four Ventures",
+    category: "CORPORATE",
+    date: "April 20, 2026",
+    image: "/assets/images/global-network.jpg",
+    description: "The holding company outlines its investment posture and operating priorities for Cedar Capital Bank, TeachWise, Petrovate, and Cedar Payroll for the year ahead."
+  },
+  {
+    id: "6",
+    title: "Cedar Capital Bank Opens New Payment Corridor Into South-East Asia",
+    category: "Expansion",
+    date: "April 12, 2026",
+    image: "/assets/images/global-finance.jpg",
+    description: "A new corridor brings same-day settlement and lower FX costs to enterprise customers operating between the Gulf, Europe, and South-East Asia."
+  },
+  {
+    id: "7",
+    title: "TeachWise Mobile App Surpasses One Million Booked Shifts",
+    category: "MILESTONE",
+    date: "April 5, 2026",
+    image: "/assets/images/global-vision.jpg",
+    description: "The TeachWise mobile app crosses a major milestone, with educators and schools booking over one million shifts since launch."
+  },
+  {
+    id: "8",
+    title: "Petrovate Launches Investor Portal With Verified Field Data and Revenue Share",
+    category: "Product Launch",
+    date: "March 28, 2026",
+    image: "/assets/images/skyline.jpg",
+    description: "Petrovate opens access to its investor portal, giving qualified investors verified field-level data and direct revenue-share participation in producing wells."
+  },
+  {
+    id: "9",
+    title: "Cedar Payroll Launches Partner Programme for UK Accountants and Bookkeepers",
+    category: "Partnerships",
+    date: "March 21, 2026",
+    image: "/assets/images/cedar-payroll.jpg",
+    description: "A new partner programme enables UK accountants and bookkeepers to deliver Cedar Payroll's managed services and software to their clients."
+  },
+
 
   /* 👉 add up to 10 articles */
 ];
