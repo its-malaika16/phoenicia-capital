@@ -1,0 +1,133 @@
+/* ✅ PAGE */
+.blog-page {
+  width: 100%;
+}
+
+/* ✅ HERO */
+.blog-hero {
+  position: relative;
+  height: 420px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-size: cover;
+  background-position: center;
+}
+
+/* ✅ OVERLAY */
+.overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to right,
+    rgba(7,25,18,0.9),
+    rgba(7,25,18,0.6)
+  );
+}
+
+/* ✅ BACK */
+.back {
+  position: absolute;
+  top: 20px;
+  left: 80px;
+
+  color: #d4af37;
+  font-size: 12px;
+  letter-spacing: 2px;
+
+  cursor: pointer;
+}
+
+/* ✅ HERO CONTENT */
+.hero-content {
+  position: relative;
+  text-align: center;
+  max-width: 900px;
+  color: white;
+}
+
+/* ✅ CATEGORY */
+.category {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #d4af37;
+
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+.category .line {
+  width: 40px;
+  height: 1px;
+  background: #d4af37;
+}
+
+/* ✅ TITLE */
+.hero-content h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin: 20px 0;
+}
+
+/* ✅ META */
+.meta {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  font-size: 13px;
+  color: #cbd5e0;
+}
+
+/* ✅ BODY */
+.blog-body {
+  background: #f4f4f4;
+
+  display: flex;
+  justify-content: center;
+
+  padding: 80px 20px;
+}
+
+/* ✅ CONTENT */
+.content {
+  max-width: 720px;
+}
+
+/* ✅ LEAD TEXT */
+.lead {
+  font-size: 22px;
+  line-height: 1.8;
+  color: #222;
+
+  margin-bottom: 30px;
+}
+
+/* ✅ NORMAL TEXT */
+.content p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #444;
+
+  margin-bottom: 20px;
+}
+
+/* ✅ RESPONSIVE */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .back {
+    left: 20px;
+  }
+
+  .lead {
+    font-size: 18px;
+  }
+}
