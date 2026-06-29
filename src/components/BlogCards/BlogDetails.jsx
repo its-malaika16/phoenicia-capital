@@ -8,28 +8,31 @@ export default function BlogDetails() {
 
   const blog = blogs.find((b) => b.id === id);
 
-  if (!blog) return <h2>Blog not found</h2>;
+  if (!blog) return <h2 style={{ padding: "100px" }}>Blog not found</h2>;
 
   return (
     <section className="blog-page">
 
-      {/* ✅ HERO */}
+      {/* ✅ HERO SECTION */}
       <div
         className="blog-hero"
         style={{ backgroundImage: `url(${blog.image})` }}
       >
-        <div className="overlay"></div>
+        <div className="hero-overlay"></div>
 
-        {/* ✅ BACK */}
-        <div className="back" onClick={() => navigate(-1)}>
+        {/* ✅ BACK BUTTON */}
+        <div className="back-btn" onClick={() => navigate(-1)}>
           ← BACK
         </div>
 
+        {/* ✅ HERO CONTENT */}
         <div className="hero-content">
 
           {/* CATEGORY */}
           <div className="category">
-            {blog.category} <span className="line"></span> TEACHWISE
+            <span>{blog.category}</span>
+            <span className="divider-line"></span>
+            <span>PHOENICIA</span>
           </div>
 
           {/* TITLE */}
@@ -47,22 +50,22 @@ export default function BlogDetails() {
         </div>
       </div>
 
-      {/* ✅ BODY */}
+      {/* ✅ BODY SECTION */}
       <div className="blog-body">
+        <div className="blog-container">
 
-        <div className="content">
-
-          {/* FIRST BIG PARA */}
+          {/* ✅ LEAD PARAGRAPH */}
           <p className="lead">{blog.description}</p>
 
-          {blog.content?.map((para, i) => (
-            <p key={i}>{para}</p>
+          {/* ✅ CONTENT */}
+          {blog.content?.map((para, index) => (
+            <p key={index}>{para}</p>
           ))}
 
         </div>
-
       </div>
 
     </section>
   );
 }
+``

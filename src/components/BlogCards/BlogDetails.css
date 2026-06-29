@@ -6,7 +6,7 @@
 /* ✅ HERO */
 .blog-hero {
   position: relative;
-  height: 420px;
+  height: 460px;
 
   display: flex;
   align-items: center;
@@ -16,27 +16,27 @@
   background-position: center;
 }
 
-/* ✅ OVERLAY */
-.overlay {
+/* ✅ DARK BLUE OVERLAY (LIKE IMAGE) */
+.hero-overlay {
   position: absolute;
   inset: 0;
 
   background: linear-gradient(
     to right,
-    rgba(7,25,18,0.9),
-    rgba(7,25,18,0.6)
+    rgba(6, 30, 50, 0.9),
+    rgba(6, 30, 50, 0.6)
   );
 }
 
-/* ✅ BACK */
-.back {
+/* ✅ BACK BUTTON */
+.back-btn {
   position: absolute;
-  top: 20px;
+  top: 30px;
   left: 80px;
 
-  color: #d4af37;
   font-size: 12px;
   letter-spacing: 2px;
+  color: #d4af37;
 
   cursor: pointer;
 }
@@ -44,24 +44,25 @@
 /* ✅ HERO CONTENT */
 .hero-content {
   position: relative;
+  max-width: 1000px;
   text-align: center;
-  max-width: 900px;
   color: white;
 }
 
-/* ✅ CATEGORY */
+/* ✅ CATEGORY LINE */
 .category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
   font-size: 12px;
   letter-spacing: 2px;
   color: #d4af37;
-
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  align-items: center;
 }
 
-.category .line {
+/* GOLD LINE */
+.divider-line {
   width: 40px;
   height: 1px;
   background: #d4af37;
@@ -69,8 +70,10 @@
 
 /* ✅ TITLE */
 .hero-content h1 {
-  font-size: 48px;
+  font-size: 52px;
+  font-family: Georgia, serif;
   line-height: 1.2;
+
   margin: 20px 0;
 }
 
@@ -78,7 +81,7 @@
 .meta {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 12px;
 
   font-size: 13px;
   color: #cbd5e0;
@@ -86,32 +89,32 @@
 
 /* ✅ BODY */
 .blog-body {
-  background: #f4f4f4;
+  background: #f3f3f3;
+
+  padding: 80px 20px;
 
   display: flex;
   justify-content: center;
-
-  padding: 80px 20px;
 }
 
-/* ✅ CONTENT */
-.content {
+/* ✅ CONTENT WIDTH */
+.blog-container {
   max-width: 720px;
 }
 
-/* ✅ LEAD TEXT */
+/* ✅ FIRST PARAGRAPH (BIG) */
 .lead {
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.8;
-  color: #222;
+  color: #1c1c1c;
 
   margin-bottom: 30px;
 }
 
 /* ✅ NORMAL TEXT */
-.content p {
+.blog-container p {
   font-size: 15px;
-  line-height: 1.8;
+  line-height: 1.9;
   color: #444;
 
   margin-bottom: 20px;
@@ -123,7 +126,7 @@
     font-size: 28px;
   }
 
-  .back {
+  .back-btn {
     left: 20px;
   }
 
