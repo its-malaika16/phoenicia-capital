@@ -4,7 +4,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  padding-left: 100px; /* ✅ more spacing from left */
+  padding-left: 80px; /* ✅ more spacing from left */
   overflow: hidden;
 }
 
@@ -56,6 +56,7 @@
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 15px;
+  text-align: left;
 }
 
 .hero-heading .gold {
@@ -77,12 +78,13 @@
   max-width: 550px;
   line-height: 1.6;
   margin-bottom: 30px;
+  text-align: left;
 }
 
 /* ✅ FIX: center buttons under text */
 .hero-buttons {
   display: flex;
-  justify-content: center; /* ✅ center horizontally */
+  justify-content: start;
   width: 100%;
   gap: 20px;
 }
@@ -95,6 +97,7 @@
   font-size: 1.2rem;
   cursor: pointer;
   border: none;
+  
 }
 
 .primary-btn {
