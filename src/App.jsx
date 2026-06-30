@@ -7,7 +7,7 @@ import Founder from './pages/Founder';
 import Products from './pages/Products';
 import Story from './pages/Story';
 import Blogs from './pages/Blogs';
-import BlogDetails from './pages/BlogDetails';
+import BlogDetails from './components/BlogCards/BlogDetails';
 
 import Navbar from "./components/Navbar/Navbar.jsx";
 
@@ -23,6 +23,7 @@ function App() {
         <Route path="/story" element={<Story />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/blogs/:id" element={<BlogDetails />} />
+
       </Routes>
     </Router>
   );

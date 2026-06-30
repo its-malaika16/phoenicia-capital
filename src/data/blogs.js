@@ -9,10 +9,11 @@ const blogs = [
     description:
       "Cedar Capital Bank unveils a unified multi-currency wallet enabling instant cross-border payments across more than 40 currencies for fintechs and global enterprises.",
     content: [
-      "Cedar Capital Bank today announced the launch of its multi-currency wallet, supporting over 40 global currencies in a single platform.",
-      "This innovation allows businesses to hold, convert, and send funds without relying on fragmented banking relationships.",
-      "The system features built-in FX conversion, automated settlement, and enterprise-grade compliance tools.",
-      "This release strengthens Cedar’s position in global fintech infrastructure and simplifies international operations."
+      "Cedar Capital Bank today announced the general availability of its multi-currency wallet, a unified treasury layer that supports more than 40 currencies natively and settles cross-border payments in seconds rather than days.",
+      "The release builds on Cedar's pre-integrated banking platform and gives fintechs, marketplaces, and global enterprises a single ledger to hold, convert, and disburse funds without managing dozens of correspondent banking relationships.",
+      "Our customers are operating across borders from day one, said the Cedar Capital Bank product team. This release removes the friction that historically slowed expansion one wallet, one compliance posture, one source of truth for every currency.",
+      "The wallet ships with built-in FX, programmatic conversion rules, and full compliance tooling including KYC, sanctions screening, and transaction monitoring. Early customers report reductions of up to 60% in FX overhead and same-day onboarding for new corridors.",
+      "Multi-currency wallet capabilities are available immediately to all Cedar Capital Bank platform clients via the standard API and admin console."
     ]
   },
 
@@ -26,10 +27,10 @@ const blogs = [
     description:
       "Following strong demand from existing clients, TeachWise extends its recruitment platform into hospitality, specialised office staffing, and executive head-hunting.",
     content: [
-      "TeachWise has announced a major expansion of its recruitment offering, extending its education platform into new verticals.",
-      "The move follows two years of growth in education recruitment, where TeachWise established itself as a trusted partner.",
-      "The platform will now support hospitality hiring, office staffing, and executive search services.",
-      "This expansion positions TeachWise as a broader workforce solutions provider."
+      "TeachWise has announced a major expansion of its recruitment offering, extending its school-focused platform into hospitality, specialised office roles, and executive search.",
+      "The move follows two years of growth in education recruitment, where TeachWise has become a trusted partner for schools across the UK. The new verticals reuse the same vetted-talent infrastructure and mobile-first booking workflow that schools rely on for cover and permanent placements.",
+      "Restaurants, hotels, and corporate clients will now have access to TeachWise's vetting pipeline, with both temporary cover and permanent hires available through the existing platform.",
+      "The expansion is part of Phoenicia Capital Holdings' broader strategy of compounding operational excellence across adjacent service markets without diluting the founding mission of each venture."
     ]
   },
 
@@ -43,10 +44,10 @@ const blogs = [
     description:
       "Initial pilot results from Petrovate's AI-enabled optimization platform show double-digit yield improvements across global oil fields.",
     content: [
-      "Petrovate has successfully completed pilot testing of its AI-driven well optimization platform.",
-      "Across three operational oil fields, the system achieved an average production increase of 18%.",
-      "The solution uses predictive analytics and real-time monitoring to optimize well output.",
-      "The company plans to expand its deployment across additional regions in the coming months."
+      "Petrovate has published the first results from its AI-enabled well-optimization pilot, reporting an average yield improvement of 18% across three operating fields in the United States and the Middle East.",
+      "The platform combines real-time downhole sensor data with proprietary machine-learning models that adjust pump cadence, choke positions, and chemical injection in near real-time. Operators retain full override control through Petrovate's investor and operations portal.",
+      "Beyond yield, the pilot recorded a 22% reduction in unplanned equipment downtime and meaningful extension of artificial-lift equipment life — a key driver of long-term economics on mature wells.",
+      "Petrovate is now opening the platform to additional operators under its performance-based technology leasing model, where fees are tied directly to verified production uplift."
     ]
   },
 
@@ -60,10 +61,10 @@ const blogs = [
     description:
       "Cedar Payroll introduces real-time HMRC reporting and an upgraded employee self-service portal.",
     content: [
-      "Cedar Payroll has released its latest platform update featuring real-time HMRC submissions.",
-      "The new system automates tax reporting, reducing compliance risks for businesses.",
-      "Employees now have access to a redesigned self-service portal for payslips and documents.",
-      "This release improves both operational efficiency and user experience."
+      "Cedar Payroll has shipped a major platform update, introducing real-time HMRC reporting, refreshed pension auto-enrolment workflows, and a redesigned employee self-service portal.",
+      "UK employers can now submit PAYE and NIC data in real time, generate compliant P45 and P60 documents on demand, and manage timesheets and payslips from a single workspace.",
+      "The employee self-service portal gives staff direct access to payslips, tax documents, and personal details — reducing inbound HR queries and freeing payroll teams to focus on higher-value work.",
+      "The release is available to all managed-service and software-only Cedar Payroll customers at no additional cost."
     ]
   },
 
@@ -111,10 +112,10 @@ const blogs = [
     description:
       "TeachWise achieves a major milestone with over one million shifts booked through its mobile platform.",
     content: [
-      "The TeachWise mobile application has reached one million booked shifts.",
-      "The platform connects educators with schools across multiple regions.",
-      "Growth has been driven by strong adoption and ease of use.",
-      "This milestone highlights the scalability of TeachWise’s booking infrastructure."
+      "Phoenicia Capital Holdings has published its 2026 outlook, setting out investment posture and operating priorities for each of its four ventures.",
+      "The holding company will continue to favour disciplined, cycle-resilient growth across finance, education, energy, and business services — with selective expansion in markets where its operating teams have a structural edge.",
+      "Cedar Capital Bank will deepen its multi-currency capabilities and expand corridors in the Middle East and South-East Asia. TeachWise will scale its recently-launched hospitality and executive search lines. Petrovate will broaden its operator network for the AI optimization platform. Cedar Payroll will continue to invest in HMRC-grade compliance tooling and employee experience.",
+      "One group, four industries, one philosophy: build companies that outlast cycles, the founder noted in the accompanying letter to partners."
     ]
   },
 
