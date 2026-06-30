@@ -21,11 +21,9 @@
   position: absolute;
   inset: 0;
 
-  background: linear-gradient(
-    to right,
-    rgba(6, 30, 50, 0.9),
-    rgba(6, 30, 50, 0.6)
-  );
+  background: linear-gradient(to right,
+      rgba(6, 30, 50, 0.9),
+      rgba(6, 30, 50, 0.6));
 }
 
 /* ✅ BACK BUTTON */
@@ -107,7 +105,7 @@
   font-size: 20px;
   line-height: 1.8;
   color: #1c1c1c;
-
+  font-weight: bold;
   margin-bottom: 30px;
 }
 
