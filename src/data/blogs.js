@@ -76,12 +76,12 @@ const blogs = [
     readTime: "3 min read",
     image: "/assets/images/global-network.jpg",
     description:
-      "Phoenicia Capital outlines its strategic priorities and expansion plans for the year ahead.",
+      "The holding company outlines its investment posture and operating priorities for Cedar Capital Bank, TeachWise, Petrovate, and Cedar Payroll for the year ahead.",
     content: [
-      "Phoenicia Capital Holdings has published its 2026 outlook covering all four core ventures.",
-      "The group plans to expand geographically while strengthening its fintech and recruitment platforms.",
-      "Focus areas include operational efficiency, compliance, and digital innovation.",
-      "The outlook reinforces the company’s vision of building interconnected global services."
+      "Phoenicia Capital Holdings has published its 2026 outlook, setting out investment posture and operating priorities for each of its four ventures.",
+      "The holding company will continue to favour disciplined, cycle-resilient growth across finance, education, energy, and business services — with selective expansion in markets where its operating teams have a structural edge.",
+      "Cedar Capital Bank will deepen its multi-currency capabilities and expand corridors in the Middle East and South-East Asia. TeachWise will scale its recently-launched hospitality and executive search lines. Petrovate will broaden its operator network for the AI optimization platform. Cedar Payroll will continue to invest in HMRC-grade compliance tooling and employee experience.",
+      "One group, four industries, one philosophy: build companies that outlast cycles, the founder noted in the accompanying letter to partners."
     ]
   },
 
@@ -93,12 +93,11 @@ const blogs = [
     readTime: "3 min read",
     image: "/assets/images/global-finance.jpg",
     description:
-      "A new payment corridor introduces faster settlements and reduced FX costs across multiple regions.",
+      "A new corridor brings same-day settlement and lower FX costs to enterprise customers operating between the Gulf, Europe, and South-East Asia.",
     content: [
-      "Cedar Capital Bank has launched a new payment corridor connecting Europe, the Gulf, and South-East Asia.",
-      "The system enables same-day settlements and reduced foreign exchange fees.",
-      "Businesses operating globally will benefit from streamlined international transactions.",
-      "This marks a key step in expanding Cedar’s global payments infrastructure."
+      "Cedar Capital Bank has activated a new payment corridor into South-East Asia, with initial coverage spanning Singapore, Malaysia, Indonesia, and the Philippines.",
+      "Enterprise customers now benefit from same-day settlement, transparent FX, and direct integration into Cedar's compliance and reconciliation tooling — a meaningful improvement over the multi-hop correspondent banking flows still common in the region.",
+      "The corridor is the first of several planned for 2026 as Cedar continues to deepen connectivity between the Gulf, Europe, and Asia.",
     ]
   },
 
@@ -110,12 +109,11 @@ const blogs = [
     readTime: "2 min read",
     image: "/assets/images/global-vision.jpg",
     description:
-      "TeachWise achieves a major milestone with over one million shifts booked through its mobile platform.",
+      "The TeachWise mobile app crosses a major milestone, with educators and schools booking over one million shifts since launch.",
     content: [
-      "Phoenicia Capital Holdings has published its 2026 outlook, setting out investment posture and operating priorities for each of its four ventures.",
-      "The holding company will continue to favour disciplined, cycle-resilient growth across finance, education, energy, and business services — with selective expansion in markets where its operating teams have a structural edge.",
-      "Cedar Capital Bank will deepen its multi-currency capabilities and expand corridors in the Middle East and South-East Asia. TeachWise will scale its recently-launched hospitality and executive search lines. Petrovate will broaden its operator network for the AI optimization platform. Cedar Payroll will continue to invest in HMRC-grade compliance tooling and employee experience.",
-      "One group, four industries, one philosophy: build companies that outlast cycles, the founder noted in the accompanying letter to partners."
+      "TeachWise has announced that its mobile app has surpassed one million booked shifts, a milestone reached just over two years after launch.",
+      "The platform's mobile-first workflow has become a daily tool for educators across the UK, with schools relying on the same app for last-minute cover and longer-term placements.",
+      "The team credits the milestone to a relentless focus on speed, vetting quality, and listening closely to the educators and school leaders who use the product every day.",
     ]
   },
 
@@ -127,12 +125,11 @@ const blogs = [
     readTime: "4 min read",
     image: "/assets/images/skyline.jpg",
     description:
-      "Petrovate introduces a secure investor portal providing field-level data and revenue participation.",
+      "Petrovate opens access to its investor portal, giving qualified investors verified field-level data and direct revenue-share participation in producing wells.",
     content: [
-      "Petrovate has launched its investor portal designed for qualified investors.",
-      "The platform provides access to verified operational data from oil fields.",
-      "Investors can participate directly in revenue-sharing opportunities.",
-      "The portal increases transparency and simplifies investment processes."
+      "Petrovate has opened access to its investor portal, giving qualified investors a transparent view of producing well-level data alongside direct revenue-share participation.",
+      "The portal exposes verified production, optimization-uplift metrics, and operating performance for participating assets a level of transparency historically reserved for working-interest owners.",
+      "Revenue-share participation is offered alongside Petrovate's existing asset-ownership and technology-leasing pillars, giving investors flexible ways to engage with the platform.",
     ]
   },
 
@@ -144,12 +141,11 @@ const blogs = [
     readTime: "3 min read",
     image: "/assets/images/cedar-payroll.jpg",
     description:
-      "A new partner programme enables accountants to deliver Cedar Payroll services to clients.",
+      "A new partner programme enables UK accountants and bookkeepers to deliver Cedar Payroll's managed services and software to their clients.",
     content: [
-      "Cedar Payroll has launched its official partner programme targeting UK accountants.",
-      "The initiative allows partners to resell and manage payroll services for their clients.",
-      "Participants gain access to tools, training, and revenue-sharing opportunities.",
-      "The programme aims to scale Cedar Payroll’s reach across professional networks."
+      "Cedar Payroll has launched a dedicated partner programme for UK accountants and bookkeepers, enabling practices to deliver Cedar's managed payroll services and software to their clients under a co-branded offering.",
+      "Partners gain access to dedicated onboarding support, a central practice dashboard, and preferential commercials — making it easier to scale payroll services without building infrastructure in-house.",
+      "The programme is open to UK practices of all sizes and is already live with a cohort of launch partners.",
     ]
   }
 ];
