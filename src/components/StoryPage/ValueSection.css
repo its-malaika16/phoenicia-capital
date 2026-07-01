@@ -88,3 +88,23 @@
     font-size: 28px;
   }
 }
+/* ✅ ICON */
+.value-icon {
+  width: 32px;
+  height: 32px;
+
+  color: #c49a63;
+  margin-bottom: 20px;
+}
+
+.value-icon svg {
+  width: 32px;
+  height: 32px;
+
+  stroke: currentColor;
+  fill: none;
+
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
