@@ -8,12 +8,14 @@ import Products from './pages/Products';
 import Story from './pages/Story';
 import Blogs from './pages/Blogs';
 import BlogDetails from './components/BlogCards/BlogDetails';
+import ScrollToTop from './components/ScrollToTop';
 
 import Navbar from "./components/Navbar/Navbar.jsx";
 
 function App() {
   return (
     <Router>
+       <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

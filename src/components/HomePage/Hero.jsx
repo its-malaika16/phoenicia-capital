@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Hero.css";
 
 const images = [
@@ -33,6 +34,7 @@ const textSlides = [
 
 export default function Hero() {
   const [index, setIndex] = useState(0);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -64,19 +66,36 @@ export default function Hero() {
 
       {/* Content */}
       <div className="hero-content">
-        <span className="hero-small">{textSlides[index].small}</span>
+        <span className="hero-small">
+          {textSlides[index].small}
+        </span>
 
         <h1 className="hero-heading">
           {textSlides[index].headingWhite}
-          <span className="gold">{textSlides[index].headingGold}</span>
+          <span className="gold">
+            {textSlides[index].headingGold}
+          </span>
         </h1>
 
-        <p className="hero-paragraph">{textSlides[index].paragraph}</p>
+        <p className="hero-paragraph">
+          {textSlides[index].paragraph}
+        </p>
 
-        {/* ✅ FIXED: buttons centered */}
+        {/* Buttons */}
         <div className="hero-buttons">
-          <button className="primary-btn">Get Started </button>
-          <button className="secondary-btn">Learn More</button>
+          <button
+            className="primary-btn"
+            onClick={() => navigate("/contact")}
+          >
+            Get Started
+          </button>
+
+          <button
+            className="secondary-btn"
+            onClick={() => navigate("/story")}
+          >
+            Learn More
+          </button>
         </div>
       </div>
 
@@ -90,6 +109,7 @@ export default function Hero() {
           />
         ))}
       </div>
+
     </div>
   );
 }

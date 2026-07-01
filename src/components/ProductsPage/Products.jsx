@@ -81,7 +81,7 @@ export default function ProductsPageSection() {
           </div>
 
           {/* CONTENT */}
-          <div className="product-content">
+          <div className="productlist-content">
             <span className="product-top">
               {product.id} — {product.category}
             </span>
