@@ -21,16 +21,17 @@ export default function Footer() {
         {/* MIDDLE */}
         <div className="footer-links">
           <h4>EXPLORE</h4>
-          <a href="/products">Products</a>
-          <a href="/story">Our Story</a>
-          <a href="/founder">Our Founder</a>
+          <Link to="/">Home</Link>
+          <Link to="/products">Products</Link>
+          <Link to="/story">Our Story</Link>
+          <Link to="/founder">Our Founder</Link>
         </div>
 
         {/* RIGHT */}
         <div className="footer-contact">
           <h4>CONTACT</h4>
           <p>support@phoeniciacapital.co.uk</p>
-          <a href="/contact">Get in touch</a>
+          <Link to="/contact">Get in touch</Link>
 
           <p className="address">
             Blue Bay Tower <br />
