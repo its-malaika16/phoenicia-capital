@@ -9,7 +9,7 @@ export default function OfficeLocation() {
         {/* ✅ LEFT SIDE */}
         <div className="office-left">
 
-          <span className="office-small">
+          <span className="office-small subheading">
             <span className="line"></span>
             OFFICE LOCATION
           </span>

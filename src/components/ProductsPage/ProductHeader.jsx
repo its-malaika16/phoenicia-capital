@@ -14,7 +14,7 @@ export default function ProductHeader() {
         <h1>Our Products</h1>
 
         <p>
-          Four ventures spanning education, energy, banking, and payroll —
+          Four ventures spanning education, energy, banking, and payroll
           each chosen for its enduring potential and alignment with our values.
         </p>
       </div>

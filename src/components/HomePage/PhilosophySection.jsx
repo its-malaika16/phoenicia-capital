@@ -16,7 +16,7 @@ export default function PhilosophySection() {
 
                 <div className="philosophy-content">
                     <p>
-                        Phoenicia Capital Holdings is a diversified group operating across finance, education, energy, and business services — home to Cedar Capital Bank, TeachWise, Petrovate, and Cedar Payroll.
+                        Phoenicia Capital Holdings is a diversified group operating across finance, education, energy, and business services home to Cedar Capital Bank, TeachWise, Petrovate, and Cedar Payroll.
                         We build and steward companies designed to outlast cycles: trusted brands, disciplined operations, and forward-thinking solutions that create long-term value for the clients and communities we serve.
                     </p>
 

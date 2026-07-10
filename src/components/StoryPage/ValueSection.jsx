@@ -39,7 +39,7 @@ const CompassIcon = () => (
 const values = [
   {
     title: "Integrity",
-    desc: "We operate with transparency and principled judgment across every venture — from banking to payroll to education.",
+    desc: "We operate with transparency and principled judgment across every venture from banking to payroll to education.",
     icon: <ShieldIcon />
   },
   {
@@ -54,7 +54,7 @@ const values = [
   },
   {
     title: "Purpose",
-    desc: "Every business we own must serve real people — teachers, employers, depositors, operators — with measurable utility.",
+    desc: "Every business we own must serve real people; teachers, employers, depositors, operators with measurable utility.",
     icon: <CompassIcon />
   }
 ];
@@ -64,8 +64,8 @@ export default function ValuesSection() {
     <section className="values-section">
 
       <div className="values-header">
-        <span className="values-small">
-          <span className="line subheading"></span>
+        <span className="values-small subheading">
+          <span className="line"></span>
           OUR VALUES
           <span className="line"></span>
         </span>

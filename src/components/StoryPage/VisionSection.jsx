@@ -7,8 +7,8 @@ export default function VisionSection() {
       <div className="vision-container">
 
         {/* Small label */}
-        <span className="vision-small">
-          <span className="line subheading"></span>
+        <span className="vision-small subheading">
+          <span className="line"></span>
           OUR VISION
           <span className="line"></span>
         </span>

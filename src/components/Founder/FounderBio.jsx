@@ -19,7 +19,7 @@ export default function FounderBio() {
         {/* RIGHT CONTENT */}
         <div className="bio-content">
           <h2 className="bio-quote">
-            "We build for the long horizon — patient with capital, generous with craft."
+            "We build for the long horizon patient with capital, generous with craft."
           </h2>
 
           <p>
@@ -31,7 +31,7 @@ export default function FounderBio() {
 
           <p>
             His philosophy is straightforward: identify industries where trust,
-            technology, and operational excellence compound over time — then build
+            technology, and operational excellence compound over time then build
             or back the companies best positioned to lead them.
           </p>
 

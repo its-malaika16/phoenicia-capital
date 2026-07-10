@@ -37,7 +37,7 @@ export default function VenturesSection() {
 
       <div className="ventures-header">
         <span className="line"> </span>
-        <span>OUR VENTURES</span>
+        <span className="subheading">OUR VENTURES</span>
         <span className="line"> </span>
         <h2>Prefer to reach a venture directly?</h2>
       </div>

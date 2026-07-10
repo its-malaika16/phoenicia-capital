@@ -18,7 +18,7 @@ export default function PurposeSection() {
 
           <p>
             Phoenicia Capital Holdings exists to create, acquire, and steward
-            businesses that matter — companies that improve how people learn,
+            businesses that matter companies that improve how people learn,
             transact, get paid, and produce energy.
           </p>
 

@@ -13,12 +13,12 @@ export default function StoryHeader() {
 
         <h1>
           Creating Businesses That <br />
-          Shape <span className="yellow-text">Tomorrow</span>
+          Shape Tomorrow
         </h1>
 
         <p>
           Phoenicia Capital Holdings owns and operates a focused portfolio of
-          ventures across education, energy, banking, and payroll — united by a
+          ventures across education, energy, banking, and payroll united by a
           single philosophy of patient, principled ownership.
         </p>
       </div>
