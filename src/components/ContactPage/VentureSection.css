@@ -18,7 +18,7 @@
 
 .ventures-header h2 {
   font-size: 34px;
-  color: #2b2350;
+  color: #282560;
   margin-top: 10px;
 }
 
@@ -67,7 +67,7 @@
 /* Title */
 .venture-card h3 {
   font-size: 22px;
-  color: #2b2350;
+  color: #282560;
   margin: 10px 0;
 }
 
@@ -82,7 +82,7 @@
 .visit-link {
   font-size: 13px;
   font-weight: 600;
-  color: #2b2350;
+  color: #282560;
 }
 
 .line{

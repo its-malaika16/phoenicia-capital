@@ -8,7 +8,7 @@ export default function PurposeSection() {
 
         {/* LEFT CONTENT */}
         <div className="purpose-content">
-          <span className="purpose-small">OUR PURPOSE</span>
+          <span className="purpose-small subheading">OUR PURPOSE</span>
 
           <h2>
             Building the <br />

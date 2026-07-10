@@ -12,7 +12,7 @@ export default function FounderBio() {
 
           <div className="bio-name">
             <h3>Ali A Hammoud</h3>
-            <span>FOUNDER & CEO</span>
+            <span className="subheading">FOUNDER & CEO</span>
           </div>
         </div>
 

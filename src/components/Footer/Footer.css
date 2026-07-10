@@ -1,5 +1,5 @@
 .footer {
-  background: #2b2350; /* deep purple */
+  background: #282560; /* deep purple */
   color: #ffffff;
 }
 
@@ -20,7 +20,7 @@
 .footer-sub {
   font-size: 12px;
   letter-spacing: 3px;
-  color: #d4af37; /* gold */
+  color: #c1976b; /* gold */
   display: block;
   margin-bottom: 20px;
 }
@@ -37,7 +37,7 @@
 .footer-contact h4 {
   font-size: 12px;
   letter-spacing: 2px;
-  color: #d4af37;
+  color: #c1976b;
   margin-bottom: 15px;
 }
 
@@ -50,7 +50,7 @@
 }
 
 .footer-links a:hover {
-  color: #d4af37;
+  color: #c1976b;
 }
 
 /* CONTACT */
@@ -67,7 +67,7 @@
 }
 
 .footer-contact a:hover {
-  color: #d4af37;
+  color: #c1976b;
 }
 
 .address {

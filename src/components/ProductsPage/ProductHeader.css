@@ -34,8 +34,8 @@
 /* Small title */
 .product-small {
   font-size: 12px;
-  letter-spacing: 3px;
-  color: #d4af37;
+  letter-spacing: 1px;
+  color: #c1976b;
   margin-bottom: 15px;
   display: block;
 }

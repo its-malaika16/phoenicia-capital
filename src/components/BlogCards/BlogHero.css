@@ -19,10 +19,10 @@
 .news-label {
   display: inline-block;
 
-  color: #d4af37;
+  color: #c1976b;
 
   font-size: 12px;
-  letter-spacing: 4px;
+  letter-spacing: 1px;
   font-weight: 500;
 
   margin-bottom: 24px;
@@ -35,7 +35,7 @@
 
   color: #ffffff;
 
-  font-family: Georgia, serif;
+  /* font-family: Georgia, serif; */
   font-weight: 400;
 
   margin-bottom: 32px;

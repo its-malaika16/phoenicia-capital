@@ -13,7 +13,9 @@ export default function BlogCard({ blog }) {
       <div className="blog-content">
         <span className="blog-category">{blog.category}</span>
 
-        <h3>{blog.title}</h3>
+        <h4 className="subheading" style={{ fontWeight: "bold" }}>
+          {blog.title}
+        </h4>
         <p>{blog.description}</p>
 
         <br></br>

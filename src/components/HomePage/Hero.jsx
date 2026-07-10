@@ -49,7 +49,7 @@ export default function Hero() {
 
       {/* Slider */}
       <div
-        className="hero-slider"
+        className="hero-slider font-bold"
         style={{ transform: `translateX(-${index * 100}%)` }}
       >
         {images.map((img, i) => (
@@ -66,13 +66,13 @@ export default function Hero() {
 
       {/* Content */}
       <div className="hero-content">
-        <span className="hero-small">
+        <span className="hero-small subheading">
           {textSlides[index].small}
         </span>
 
-        <h1 className="hero-heading">
+        <h1 className="hero-heading font-medium">
           {textSlides[index].headingWhite}
-          <span className="gold">
+          <span className="yellow-text gold">
             {textSlides[index].headingGold}
           </span>
         </h1>

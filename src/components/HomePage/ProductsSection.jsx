@@ -67,7 +67,7 @@ export default function ProductsSection() {
             key={item.id}
             className="product-card"
             style={{ "--hover-color": item.color }}
-            onClick={() => window.open(item.url, "_blank")} // ✅ CLICKABLE CARD
+            onClick={() => window.open(item.url, "_blank")} 
           >
             <div className="card-content">
 
@@ -85,23 +85,19 @@ export default function ProductsSection() {
 
               <p>{item.desc}</p>
 
-              {/* ✅ Small arrow link */}
               <span
                 className="arrow"
                 onClick={(e) => {
-                  e.stopPropagation(); // ✅ prevents double click issue
+                  e.stopPropagation(); 
                   window.open(item.url, "_blank");
                 }}
               >
                 →
               </span>
-
             </div>
           </div>
-
         ))}
       </div>
-
     </section>
   );
 }

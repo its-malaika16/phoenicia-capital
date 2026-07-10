@@ -9,7 +9,7 @@ export default function ProductHeader() {
 
       {/* Content */}
       <div className="product-content">
-        <span className="product-small">PORTFOLIO</span>
+        <span className="product-small subheading">PORTFOLIO</span>
 
         <h1>Our Products</h1>
 

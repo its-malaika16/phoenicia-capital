@@ -65,7 +65,7 @@ export default function ValuesSection() {
 
       <div className="values-header">
         <span className="values-small">
-          <span className="line"></span>
+          <span className="line subheading"></span>
           OUR VALUES
           <span className="line"></span>
         </span>

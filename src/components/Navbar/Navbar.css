@@ -63,7 +63,7 @@
 }
 
 .nav-links li a:hover {
-  color: #d4af37;
+  color: #c1976b;
 }
 
 .nav-link {
@@ -76,12 +76,12 @@
 
 /* ✅ ACTIVE PAGE */
 .nav-link.active {
-  color: #d4af37;
+  color: #c1976b;
 }
 
 /* Hover */
 .nav-link:hover {
-  color: #d4af37;
+  color: #c1976b;
 }
 
 /* Mobile Toggle */

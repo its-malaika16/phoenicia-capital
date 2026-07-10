@@ -9,7 +9,7 @@ export default function ContactHeader() {
 
       {/* Content */}
       <div className="contact-content">
-        <span className="contact-small">GET IN TOUCH</span>
+        <span className="contact-small subheading">GET IN TOUCH</span>
 
         <h1>
           Let’s Build the Future <br />

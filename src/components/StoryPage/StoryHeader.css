@@ -24,6 +24,10 @@
   z-index: 1;
 }
 
+.gold {
+  color: #c1976b;
+}
+
 /* ✅ Content */
 .story-content {
   position: relative;
@@ -34,9 +38,8 @@
 
 /* Small label */
 .story-small {
-  font-size: 12px;
-  letter-spacing: 3px;
-  color: #d4af37;
+  letter-spacing: 1px;
+  color: #c1976b;
   display: block;
   margin-bottom: 15px;
 }

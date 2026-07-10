@@ -1,5 +1,5 @@
 .vision-section {
-  background: #2b2350; /* deep purple */
+  background: #282560; /* deep purple */
   padding: 120px 100px;
   text-align: center;
   color: white;
@@ -15,7 +15,7 @@
 .vision-small {
   font-size: 12px;
   letter-spacing: 3px;
-  color: #d4af37;
+  color: #c1976b;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,7 +26,7 @@
 .line {
   width: 40px;
   height: 1px;
-  background: #d4af37;
+  background: #c1976b;
 }
 
 /* ✅ heading */
@@ -39,7 +39,7 @@
 
 /* highlight word */
 .highlight {
-  color: #d4af37;
+  color: #c1976b;
   font-style: italic;
 }
 

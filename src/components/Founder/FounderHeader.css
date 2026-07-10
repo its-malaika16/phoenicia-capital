@@ -1,6 +1,6 @@
 /* MAIN SECTION */
 .founder-header {
-  background: #2b2350;
+  background: #282560;
   padding: 120px 100px;
   color: white;
 }
@@ -37,13 +37,13 @@
 .line {
   width: 30px;
   height: 1px;
-  background: #d4af37;
+  background: #c1976b;
 }
 
 .label {
   font-size: 12px;
-  letter-spacing: 3px;
-  color: #d4af37;
+letter-spacing: 1px; 
+  color: #c1976b;
 }
 
 /* heading */
@@ -54,7 +54,7 @@
 }
 
 .highlight {
-  color: #d4af37;
+  color: #c1976b;
   font-style: italic;
 }
 
@@ -95,7 +95,7 @@
 /* author */
 .author {
   font-size: 14px;
-  color: #d4af37;
+  color: #c1976b;
 }
 
 /* RIGHT IMAGE */
@@ -115,7 +115,7 @@
   left: 20px;
   background: #3a2f65;
   padding: 15px 20px;
-  border-left: 3px solid #d4af37;
+  border-left: 3px solid #c1976b;
 }
 
 .name-card h3 {
@@ -125,7 +125,7 @@
 
 .name-card span {
   font-size: 12px;
-  color: #d4af37;
+  color: #c1976b;
   letter-spacing: 1px;
 }
 

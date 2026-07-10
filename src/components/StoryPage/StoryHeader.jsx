@@ -9,11 +9,11 @@ export default function StoryHeader() {
 
       {/* Content */}
       <div className="story-content">
-        <span className="story-small">OUR STORY</span>
+        <span className="story-small subheading">OUR STORY</span>
 
         <h1>
           Creating Businesses That <br />
-          Shape Tomorrow
+          Shape <span className="yellow-text">Tomorrow</span>
         </h1>
 
         <p>

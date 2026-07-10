@@ -6,7 +6,7 @@ export default function NewsHero() {
 
       <div className="news-hero-content">
 
-        <span className="news-label">
+        <span className="news-label subheading">
           NEWSROOM
         </span>
 

@@ -8,7 +8,7 @@ export default function VisionSection() {
 
         {/* Small label */}
         <span className="vision-small">
-          <span className="line"></span>
+          <span className="line subheading"></span>
           OUR VISION
           <span className="line"></span>
         </span>
@@ -16,7 +16,7 @@ export default function VisionSection() {
         {/* Heading */}
         <h2>
           A holding company defined by the{" "}
-          <span className="highlight">quality</span>{" "}
+          <span className="highlight yellow-text">quality</span>{" "}
           of what it owns; not the speed
           <br />
           at which it grows.

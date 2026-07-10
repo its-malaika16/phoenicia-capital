@@ -5,17 +5,73 @@
   box-sizing: border-box;
 }
 
-html, body {
-  width: 100%;
-  overflow-x: hidden;
-}
-
-/* ✅ FIXED ROOT (FULL WIDTH) */
+html,
+body,
 #root {
   width: 100%;
+  overflow-x: hidden;
+  font-family: "Mont", sans-serif;
 }
 
-/* OPTIONAL: global font */
-body {
-  font-family: system-ui, -apple-system, sans-serif;
+@font-face {
+  font-family: "Mont";
+  src: url("/assets/fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url("/assets/fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url("/assets/fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+/* Global Font */
+* {
+  font-family: "Mont", sans-serif;
+}
+
+/* Body Text */
+body,
+p,
+span,
+div,
+button,
+input,
+textarea,
+li,
+a,
+Link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h5,
+h6 {
+  font-size: 30px !important;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* Subheadings */
+.subheading {
+  font-size: 18px !important;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.yellow-text{
+    font-size: 30px !important ;
+  font-weight: 700;
+  line-height: 1.2;
 }

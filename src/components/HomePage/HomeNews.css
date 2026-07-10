@@ -8,7 +8,7 @@
   align-items: flex-end;
   gap: 24px;
   margin-bottom: 50px;
-  color: #2b2350;
+  color: #282560;
 }
 
 .blogs-header h2 {
@@ -38,7 +38,7 @@
 .blogs-header button {
   border: none;
   background: transparent;
-  color: #2b2350;
+  color: #282560;
   font-weight: 600;
   font-size: 15px;
   cursor: pointer;
@@ -47,7 +47,7 @@
 }
 
 .blogs-header button:hover {
-  color: #d4af37;
+  color: #c1976b;
   transform: translateX(5px);
 }
 
@@ -115,7 +115,7 @@
 }
 
 .blog-category {
-  color: #d4af37;
+  color: #c1976b;
   font-size: 12px;
   letter-spacing: 1px;
   font-weight: 700;
@@ -125,14 +125,14 @@
 .blog-content h3 {
   margin-top: 12px;
   margin-bottom: 14px;
-  color: #2b2350;
+  color: #282560;
   font-size: 1.3rem;
   line-height: 1.4;
   transition: color 0.3s ease;
 }
 
 .blog-card:hover h3 {
-  color: #d4af37;
+  color: #c1976b;
 }
 
 .blog-content p {
@@ -161,12 +161,12 @@
 
 .blog-footer span:last-child {
   font-weight: 600;
-  color: #2b2350;
+  color: #282560;
   transition: color 0.3s ease;
 }
 
 .blog-card:hover .blog-footer span:last-child {
-  color: #d4af37;
+  color: #c1976b;
 }
 
 /* =========================

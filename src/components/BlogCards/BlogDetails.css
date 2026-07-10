@@ -34,7 +34,7 @@
 
   font-size: 12px;
   letter-spacing: 2px;
-  color: #d4af37;
+  color: #c1976b;
 
   cursor: pointer;
 }
@@ -56,20 +56,20 @@
 
   font-size: 12px;
   letter-spacing: 2px;
-  color: #d4af37;
+  color: #c1976b;
 }
 
 /* GOLD LINE */
 .divider-line {
   width: 40px;
   height: 1px;
-  background: #d4af37;
+  background: #c1976b;
 }
 
 /* ✅ TITLE */
 .hero-content h1 {
   font-size: 52px;
-  font-family: Georgia, serif;
+  /* font-family: Georgia, serif; */
   line-height: 1.2;
 
   margin: 20px 0;

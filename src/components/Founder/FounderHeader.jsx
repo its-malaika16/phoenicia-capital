@@ -14,11 +14,11 @@ export default function FounderHeader() {
 
           <div className="label-row">
             <span className="line"></span>
-            <span className="label">LEADERSHIP</span>
+            <span className="label subheading">LEADERSHIP</span>
           </div>
 
           <h1>
-            Our <span className="highlight">Founder</span>
+            Our <span className="highlight yellow-text">Founder</span>
           </h1>
 
           <p className="subtitle">
@@ -39,7 +39,7 @@ export default function FounderHeader() {
           {/* Bottom line */}
           <div className="bottom-line"></div>
 
-          <span className="author">— Founder</span>
+          <span className="author subheading">— Founder</span>
 
         </div>
 
