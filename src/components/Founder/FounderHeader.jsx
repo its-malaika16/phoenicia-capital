@@ -4,13 +4,22 @@ export default function FounderHeader() {
   return (
     <section className="founder-header">
 
-      {/* Top decorative line */}
       <div className="top-line"></div>
 
       <div className="founder-container">
 
-        {/* LEFT SIDE */}
-        <div className="founder-left">
+        {/* LEFT IMAGE */}
+        <div className="founder-image">
+          <img src="/assets/images/Ali_Sir.jpeg" alt="Founder" />
+
+          <div className="name-card">
+            <h3>Ali A Hammoud</h3>
+            <span>FOUNDER AND CEO</span>
+          </div>
+        </div>
+
+        {/* RIGHT CONTENT */}
+        <div className="founder-content">
 
           <div className="label-row">
             <span className="line"></span>
@@ -25,7 +34,6 @@ export default function FounderHeader() {
             Founder and CEO of Phoenicia Capital Holdings
           </p>
 
-          {/* Quote */}
           <div className="quote">
             <span className="quote-mark">“</span>
 
@@ -36,25 +44,15 @@ export default function FounderHeader() {
             </p>
           </div>
 
-          {/* Bottom line */}
           <div className="bottom-line"></div>
 
-          <span className="author subheading">— Founder</span>
+          <span className="author subheading">
+            — Founder
+          </span>
 
-        </div>
-
-        {/* RIGHT SIDE IMAGE */}
-        <div className="founder-right">
-          <img src="/assets/images/Ali_Sir.jpeg" alt="Founder" />
-
-          <div className="name-card">
-            <h3>Ali A Hammoud</h3>
-            <span>FOUNDER AND CEO</span>
-          </div>
         </div>
 
       </div>
-
     </section>
   );
 }
