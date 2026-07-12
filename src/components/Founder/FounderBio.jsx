@@ -8,7 +8,7 @@ export default function FounderBio() {
 
         {/* LEFT IMAGE */}
         <div className="bio-image">
-          <img src="/assets/images/Ali.jpg" alt="Founder" />
+          <img src="/assets/images/Ali_Sir.jpeg" alt="Founder" />
 
           <div className="bio-name">
             <h3>Ali A Hammoud</h3>

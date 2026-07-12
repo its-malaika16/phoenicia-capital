@@ -1,35 +1,46 @@
 .founder-bio {
-  padding: 100px 100px;
+  padding: 100px 6%;
   background: #f8f8fb;
- 
 }
 
 /* GRID */
 .bio-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+
   display: grid;
-  grid-template-columns: 1fr 1.4fr;
+  grid-template-columns: 0.9fr 1.1fr;
   gap: 60px;
   align-items: start;
 }
 
-/* LEFT IMAGE */
+/* IMAGE */
 .bio-image {
-  position: relative;
+  height: 650px;
+
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .bio-image img {
   width: 100%;
-  border-radius: 4px;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center 30%;
 }
 
-/* NAME BELOW */
+/* NAME */
 .bio-name {
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .bio-name h3 {
   font-size: 22px;
   color: #282560;
+  margin-bottom: 5px;
 }
 
 .bio-name span {
@@ -38,23 +49,21 @@
   letter-spacing: 1px;
 }
 
-/* RIGHT CONTENT */
+/* CONTENT */
 .bio-content {
   max-width: 700px;
 }
 
-/* MAIN QUOTE */
 .bio-quote {
   font-size: 28px;
-  font-weight: 500;
+  line-height: 1.4;
   color: #282560;
   margin-bottom: 25px;
 }
 
-/* TEXT */
 .bio-content p {
   font-size: 15px;
-  line-height: 1.8;
+  line-height: 1.9;
   color: #444;
   margin-bottom: 18px;
 }
@@ -63,27 +72,63 @@
   color: #282560;
 }
 
-/* FOOTER QUOTE */
 .bio-footer {
   margin-top: 30px;
   padding-top: 20px;
+
   border-top: 1px solid #ddd;
+
   font-size: 13px;
   color: #888;
   font-style: italic;
 }
 
-/* MOBILE */
-@media (max-width: 768px) {
-  .founder-bio {
-    padding: 60px 20px;
+/* LAPTOP */
+@media (max-width: 1200px) {
+  .bio-image {
+    height: 550px;
   }
+}
 
+/* TABLET */
+@media (max-width: 992px) {
   .bio-grid {
     grid-template-columns: 1fr;
   }
 
+  .bio-image {
+    height: 520px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .founder-bio {
+    padding: 70px 20px;
+  }
+
+  .bio-image {
+    height: 420px;
+  }
+
+  .bio-quote {
+    font-size: 22px;
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+  .bio-image {
+    height: 320px;
+  }
+
   .bio-quote {
     font-size: 20px;
+  }
+
+  .bio-content p {
+    font-size: 14px;
   }
 }

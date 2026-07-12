@@ -1,32 +1,34 @@
 /* MAIN SECTION */
 .founder-header {
   background: #282560;
-  padding: 120px 100px;
+  padding: 100px 6%;
   color: white;
 }
 
-/* ✅ TOP LINE */
+/* TOP LINE */
 .top-line {
   width: 100%;
   height: 1px;
-  background: rgba(255,255,255,0.15);
+  background: rgba(255, 255, 255, 0.15);
   margin-bottom: 50px;
 }
 
 /* LAYOUT */
 .founder-container {
+  max-width: 1400px;
+  margin: 0 auto;
+
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 80px;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 60px;
   align-items: center;
 }
 
 /* LEFT SIDE */
 .founder-left {
-  max-width: 600px;
+  max-width: 650px;
 }
 
-/* label */
 .label-row {
   display: flex;
   align-items: center;
@@ -42,13 +44,13 @@
 
 .label {
   font-size: 12px;
-letter-spacing: 1px; 
+  letter-spacing: 1px;
   color: #c1976b;
 }
 
-/* heading */
 .founder-left h1 {
-  font-size: 70px;
+  font-size: clamp(2.8rem, 5vw, 4rem);
+  line-height: 1.1;
   font-weight: 500;
   margin-bottom: 15px;
 }
@@ -58,13 +60,12 @@ letter-spacing: 1px;
   font-style: italic;
 }
 
-/* subtitle */
 .subtitle {
   color: #cfcde6;
   margin-bottom: 35px;
+  line-height: 1.7;
 }
 
-/* ✅ quote */
 .quote {
   position: relative;
   padding-left: 30px;
@@ -75,7 +76,7 @@ letter-spacing: 1px;
   left: 0;
   top: -10px;
   font-size: 40px;
-  color: rgba(255,255,255,0.15);
+  color: rgba(255, 255, 255, 0.15);
 }
 
 .quote p {
@@ -84,15 +85,13 @@ letter-spacing: 1px;
   color: #e4e3ef;
 }
 
-/* ✅ bottom line */
 .bottom-line {
   width: 60%;
   height: 1px;
-  background: rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.2);
   margin: 30px 0 10px;
 }
 
-/* author */
 .author {
   font-size: 14px;
   color: #c1976b;
@@ -101,19 +100,31 @@ letter-spacing: 1px;
 /* RIGHT IMAGE */
 .founder-right {
   position: relative;
+
+  height: 650px;
+
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .founder-right img {
   width: 100%;
-  border-radius: 3px;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center 30%;
 }
 
-/* ✅ NAME CARD */
+/* NAME CARD */
 .name-card {
   position: absolute;
-  bottom: 20px;
   left: 20px;
+  bottom: 20px;
+
   background: #3a2f65;
+
   padding: 15px 20px;
   border-left: 3px solid #c1976b;
 }
@@ -125,22 +136,47 @@ letter-spacing: 1px;
 
 .name-card span {
   font-size: 12px;
-  color: #c1976b;
   letter-spacing: 1px;
+  color: #c1976b;
 }
 
+/* LAPTOP */
+@media (max-width: 1200px) {
+  .founder-right {
+    height: 550px;
+  }
+}
 
-/* ✅ MOBILE */
+/* TABLET */
+@media (max-width: 992px) {
+  .founder-container {
+    grid-template-columns: 1fr;
+  }
+
+  .founder-right {
+    height: 520px;
+  }
+}
+
+/* MOBILE */
 @media (max-width: 768px) {
   .founder-header {
     padding: 70px 20px;
   }
 
-  .founder-container {
-    grid-template-columns: 1fr;
+  .founder-right {
+    height: 420px;
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+  .founder-right {
+    height: 320px;
   }
 
-  .founder-left h1 {
-    font-size: 36px;
+  .name-card {
+    left: 10px;
+    bottom: 10px;
   }
 }
