@@ -13,7 +13,7 @@ export default function FounderHeader() {
           <img src="/assets/images/Ali_Sir.jpeg" alt="Founder" />
 
           <div className="name-card">
-            <h3>Ali A Hammoud</h3>
+            <h4>Ali A Hammoud</h4>
             <span>FOUNDER AND CEO</span>
           </div>
         </div>

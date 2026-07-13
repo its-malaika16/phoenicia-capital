@@ -16,7 +16,7 @@
 
 /* IMAGE */
 .bio-image {
-  height: 650px;
+  height: 740px;
 
   overflow: hidden;
   border-radius: 10px;
@@ -97,8 +97,9 @@
   }
 
   .bio-image {
-    height: 520px;
+    height: 480px;
     max-width: 500px;
+    min-width: 400px;
     margin: 0 auto;
   }
 }
@@ -111,6 +112,7 @@
 
   .bio-image {
     height: 420px;
+    max-width: 400px;
   }
 
   .bio-quote {
@@ -122,6 +124,7 @@
 @media (max-width: 480px) {
   .bio-image {
     height: 320px;
+    max-width: 350px;
   }
 
   .bio-quote {
