@@ -7,37 +7,68 @@ export default function ContactFormSection() {
     email: "",
     organization: "",
     inquiry: "Phoenicia Capital Holdings",
-    message: ""
+    message: "",
   });
 
+  const [loading, setLoading] = useState(false);
+
   const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
+    setForm((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
   };
 
-  // ✅ SEND EMAIL USING mailto
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const subject = `New Inquiry from ${form.name}`;
-    const body = `
-Name: ${form.name}
-Email: ${form.email}
-Organization: ${form.organization}
-Inquiry: ${form.inquiry}
+    setLoading(true);
 
-Message:
-${form.message}
-    `;
+    try {
+      const response = await fetch(
+        "https://phoeniciacapital.co.uk/api/contact.php",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name: form.name,
+            email: form.email,
+            company: form.organization,
+            type: form.inquiry,
+            description: form.message,
+          }),
+        }
+      );
 
-    window.location.href = `mailto:support@phoeniciacapital.co.uk?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      const result = await response.json();
+
+      if (result.success) {
+        alert("Inquiry submitted successfully!");
+
+        setForm({
+          name: "",
+          email: "",
+          organization: "",
+          inquiry: "Phoenicia Capital Holdings",
+          message: "",
+        });
+      } else {
+        alert(result.message);
+      }
+    } catch (error) {
+      console.error(error);
+      alert("Something went wrong.");
+    }
+
+    setLoading(false);
   };
 
   return (
     <section className="contact-section">
-
       <div className="contact-grid">
 
-        {/* ✅ LEFT SIDE */}
         <div className="contact-left">
           <p>
             Connect with Phoenicia Capital Holdings for strategic partnerships,
@@ -56,13 +87,13 @@ ${form.message}
           </div>
         </div>
 
-        {/* ✅ RIGHT FORM */}
         <form className="contact-form" onSubmit={handleSubmit}>
-          
+
           <input
             type="text"
             name="name"
             placeholder="NAME"
+            value={form.name}
             onChange={handleChange}
             required
           />
@@ -71,6 +102,7 @@ ${form.message}
             type="email"
             name="email"
             placeholder="EMAIL"
+            value={form.email}
             onChange={handleChange}
             required
           />
@@ -79,30 +111,38 @@ ${form.message}
             type="text"
             name="organization"
             placeholder="ORGANIZATION"
+            value={form.organization}
             onChange={handleChange}
           />
 
-          <select name="inquiry" onChange={handleChange}>
-            <option>Phoenicia Capital Holdings</option>
-            <option>Partnership</option>
-            <option>Investment</option>
-            <option>Support</option>
+          <select
+            name="inquiry"
+            value={form.inquiry}
+            onChange={handleChange}
+          >
+            <option value="Phoenicia Capital Holdings">
+              Phoenicia Capital Holdings
+            </option>
+            <option value="Partnership">Partnership</option>
+            <option value="Investment">Investment</option>
+            <option value="Support">Support</option>
           </select>
 
           <textarea
             name="message"
             placeholder="MESSAGE"
             rows="5"
+            value={form.message}
             onChange={handleChange}
-          ></textarea>
+          />
 
-          <button type="submit" className="submit-btn">
-            SEND INQUIRY
+          <button type="submit" className="submit-btn" disabled={loading}>
+            {loading ? "SENDING..." : "SEND INQUIRY"}
           </button>
+
         </form>
 
       </div>
-
     </section>
   );
 }
