@@ -65,10 +65,10 @@ export default function ProductsSection() {
         </div>
 
         <button
-          className="view-all"
+          className="view-all-products"
           onClick={() => navigate("/products")}
         >
-          VIEW ALL →
+          
         </button>
       </div>
 
