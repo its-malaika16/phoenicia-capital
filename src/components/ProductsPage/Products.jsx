@@ -14,7 +14,7 @@ const products = [
       "Multi-sector reach",
       "Fast turnaround hiring",
     ],
-    image: "/assets/images/teachwise.jpg",
+    image: "/assets/images/teachwise.png",
     url: "https://teachwise.co.uk",
   },
   {
@@ -30,7 +30,7 @@ const products = [
       "Production efficiency increase",
       "Global field deployment",
     ],
-    image: "/assets/images/petrovate.jpg",
+    image: "/assets/images/petrovate.png",
     url: "https://petrovate.co.uk",
   },
   {
@@ -46,7 +46,7 @@ const products = [
       "Secure banking",
       "Business solutions",
     ],
-    image: "/assets/images/cedar-bank.jpg",
+    image: "/assets/images/bank.png",
     url: "https://cedarcapitalbank.com",
   },
   {
@@ -62,7 +62,7 @@ const products = [
       "Employee portal",
       "Real-time reporting",
     ],
-    image: "/assets/images/cedar-payroll.jpg",
+    image: "/assets/images/payroll.png",
     url: "https://cedarpayroll.co.uk",
   },
 ];

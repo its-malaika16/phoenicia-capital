@@ -6,16 +6,6 @@ export default function FounderBio() {
 
       <div className="bio-grid">
 
-        {/* LEFT IMAGE */}
-        <div className="bio-image">
-          <img src="/assets/images/Ali_Sir.jpeg" alt="Founder" />
-
-          <div className="bio-name">
-            <h3>Ali A Hammoud</h3>
-            <span className="subheading">FOUNDER & CEO</span>
-          </div>
-        </div>
-
         {/* RIGHT CONTENT */}
         <div className="bio-content">
           <h2 className="bio-quote">
