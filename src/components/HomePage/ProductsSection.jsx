@@ -10,7 +10,7 @@ const products = [
     color: "#dd5f74",
     logo: "/assets/logo/Teachwise_logo.png",
     website: "https://teachwise.co.uk",
-    brochure: "/assets/brouchure/TeachWiseBrouchure.pdf",
+    brochure: "/assets/brouchure/TeachWiseBrochure.pdf",
   },
   {
     id: "02",
