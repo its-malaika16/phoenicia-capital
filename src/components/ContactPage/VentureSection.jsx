@@ -19,14 +19,14 @@ const ventures = [
     category: "BANKING & FINTECH",
     title: "Cedar Capital Bank",
     subtitle: "Banking Redefined",
-    logo: "/assets/logo/cedar-bank.png",
+    logo: "/assets/logo/cedarbanklogo.ico",
     url: "https://cedarcapitalbank.com/"
   },
   {
     category: "PAYROLL & HR",
     title: "Cedar Payroll",
     subtitle: "Payroll Made Simple — Accurate. Compliant. On Time.",
-    logo: "/assets/logo/cedar-bank.png",
+    logo: "/assets/logo/cedarpayroll.svg",
     url: "https://cedarpayroll.co.uk/"
   }
 ];
