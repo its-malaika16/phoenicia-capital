@@ -1,11 +1,22 @@
-
 RewriteEngine On
-
 RewriteBase /
+
+# Serve Markdown when an agent asks for it.
+RewriteCond %{HTTP:Accept} text/markdown [NC]
+RewriteRule ^$ /index.md [L]
 
 RewriteRule ^index\.html$ - [L]
 
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
+# Leave real files and folders alone.
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
 
-RewriteRule . /index.html [L]
+# Known application routes. Anything else stays a real 404.
+RewriteRule ^(contact|founder|products|story|blogs|blogs/[1-9])/?$ /index.html [L]
+
+<IfModule mod_headers.c>
+  Header always set Link "<https://phoeniciacapital.co.uk/llms.txt>; rel=\"describedby\"; type=\"text/plain\", <https://phoeniciacapital.co.uk/index.md>; rel=\"alternate\"; type=\"text/markdown\""
+</IfModule>
+
+ErrorDocument 404 /404.html

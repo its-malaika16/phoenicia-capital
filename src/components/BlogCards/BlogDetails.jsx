@@ -1,5 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
 import blogs from "../../data/blogs";
+import Seo from "../Seo";
 import "./BlogDetails.css";
 
 export default function BlogDetails() {
@@ -8,63 +9,61 @@ export default function BlogDetails() {
 
   const blog = blogs.find((b) => b.id === id);
 
-  if (!blog) return <h2 style={{ padding: "100px" }}>Blog not found</h2>;
+  if (!blog) {
+    return (
+      <>
+        <Seo
+          title="Page not found | Phoenicia Capital Holdings"
+          description="This Phoenicia Capital news page does not exist."
+          path={`/blogs/${id}`}
+          noindex
+        />
+        <h2 style={{ padding: "100px" }}>Blog not found</h2>
+      </>
+    );
+  }
 
   return (
-    <section className="blog-page">
+    <article className="blog-page">
+      <Seo
+        title={`${blog.title} | Phoenicia Capital`}
+        description={blog.description}
+        path={`/blogs/${blog.id}`}
+      />
+      <div className="blog-article">
+        <button type="button" className="blog-back" onClick={() => navigate(-1)}>
+          ← Back
+        </button>
 
-      {/* ✅ HERO SECTION */}
-      <div
-        className="blog-hero"
-        style={{ backgroundImage: `url(${blog.image})` }}
-      >
-        <div className="hero-overlay"></div>
-
-        {/* ✅ BACK BUTTON */}
-        <div className="back-btn" onClick={() => navigate(-1)}>
-          ← BACK
+        <div className="blog-kicker">
+          <span>{blog.category}</span>
+          <span className="blog-kicker-line" />
+          <span>Phoenicia</span>
         </div>
 
-        {/* ✅ HERO CONTENT */}
-        <div className="hero-content">
+        <h1>{blog.title}</h1>
 
-          {/* CATEGORY */}
-          <div className="category">
-            <span>{blog.category}</span>
-            <span className="divider-line"></span>
-            <span>PHOENICIA</span>
-          </div>
-
-          {/* TITLE */}
-          <h1>{blog.title}</h1>
-
-          {/* META */}
-          <div className="meta">
-            <span>{blog.date}</span>
-            <span>•</span>
-            <span>Phoenicia Newsroom</span>
-            <span>•</span>
-            <span>{blog.readTime || "3 min read"}</span>
-          </div>
-
+        <div className="blog-meta">
+          <span>{blog.date}</span>
+          <span aria-hidden="true">•</span>
+          <span>Phoenicia Newsroom</span>
+          <span aria-hidden="true">•</span>
+          <span>{blog.readTime || "3 min read"}</span>
         </div>
+
+        <img
+          className="blog-photo"
+          src={blog.image}
+          alt=""
+          draggable="false"
+        />
+
+        <p className="blog-lead">{blog.description}</p>
+
+        {blog.content?.map((para, index) => (
+          <p key={index}>{para}</p>
+        ))}
       </div>
-
-      {/* ✅ BODY SECTION */}
-      <div className="blog-body">
-        <div className="blog-container">
-
-          {/* ✅ LEAD PARAGRAPH */}
-          <p className="lead">{blog.description}</p>
-
-          {/* ✅ CONTENT */}
-          {blog.content?.map((para, index) => (
-            <p key={index}>{para}</p>
-          ))}
-
-        </div>
-      </div>
-
-    </section>
+    </article>
   );
 }

@@ -1,0 +1,19 @@
+{
+  "name": "Phoenicia Capital Holdings",
+  "description": "Public information about Phoenicia Capital Holdings, its four ventures, and how to contact the company.",
+  "version": "1.0.0",
+  "websiteUrl": "https://phoeniciacapital.co.uk/",
+  "documentation": "https://phoeniciacapital.co.uk/llms.txt",
+  "transport": {
+    "type": "http",
+    "url": "https://phoeniciacapital.co.uk/.well-known/mcp.json"
+  },
+  "capabilities": {
+    "tools": [
+      {
+        "name": "phoenicia_contact",
+        "description": "Returns the public email, phone number, and office addresses."
+      }
+    ]
+  }
+}

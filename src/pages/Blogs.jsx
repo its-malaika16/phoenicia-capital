@@ -1,3 +1,4 @@
+import Seo from "../components/Seo";
 import blogs from "../data/blogs";
 import BlogCard from "../components/BlogCards/BlogCard";
 import "../styles/Blogs.css";
@@ -19,6 +20,11 @@ const cardImages = {
 export default function Blogs() {
   return (
     <>
+      <Seo
+        title="Newsroom | Phoenicia Capital Holdings"
+        description="News from Phoenicia Capital Holdings and its ventures: TeachWise, Petrovate, Cedar Capital Bank, and Cedar Payroll."
+        path="/blogs"
+      />
       <div className="blogs-section">
         <BlogHero />
 

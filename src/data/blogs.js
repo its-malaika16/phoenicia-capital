@@ -5,7 +5,7 @@ const blogs = [
     category: "PRODUCT LAUNCH",
     date: "May 18, 2026",
     readTime: "4 min read",
-    image: "/assets/images/bank.png",
+    image: "/assets/images/news-cedar-bank.jpg?v=6",
     description:
       "Cedar Capital Bank unveils a unified multi-currency wallet enabling instant cross-border payments across more than 40 currencies for fintechs and global enterprises.",
     content: [
@@ -23,7 +23,7 @@ const blogs = [
     category: "EXPANSION",
     date: "May 11, 2026",
     readTime: "3 min read",
-    image: "/assets/images/teachwise.png",
+    image: "/assets/images/news-teachwise.jpg?v=6",
     description:
       "Following strong demand from existing clients, TeachWise extends its recruitment platform into hospitality, specialised office staffing, and executive head-hunting.",
     content: [
@@ -40,7 +40,7 @@ const blogs = [
     category: "ENERGY",
     date: "May 5, 2026",
     readTime: "5 min read",
-    image: "/assets/images/petrovate.png",
+    image: "/assets/images/news-petrovate.jpg?v=6",
     description:
       "Initial pilot results from Petrovate's AI-enabled optimization platform show double-digit yield improvements across global oil fields.",
     content: [
@@ -57,7 +57,7 @@ const blogs = [
     category: "MILESTONE",
     date: "May 1, 2026",
     readTime: "4 min read",
-    image: "/assets/images/payroll.png",
+    image: "/assets/images/news-payroll.jpg?v=1",
     description:
       "Cedar Payroll introduces real-time HMRC reporting and an upgraded employee self-service portal.",
     content: [
@@ -74,7 +74,7 @@ const blogs = [
     category: "CORPORATE",
     date: "April 20, 2026",
     readTime: "3 min read",
-    image: "/assets/images/global-network.jpg",
+    image: "/assets/images/news-meeting.jpg?v=1",
     description:
       "The holding company outlines its investment posture and operating priorities for Cedar Capital Bank, TeachWise, Petrovate, and Cedar Payroll for the year ahead.",
     content: [
@@ -91,7 +91,7 @@ const blogs = [
     category: "EXPANSION",
     date: "April 12, 2026",
     readTime: "3 min read",
-    image: "/assets/images/global-finance.jpg",
+    image: "/assets/images/news-cedar-bank.jpg?v=6",
     description:
       "A new corridor brings same-day settlement and lower FX costs to enterprise customers operating between the Gulf, Europe, and South-East Asia.",
     content: [
@@ -107,7 +107,7 @@ const blogs = [
     category: "MILESTONE",
     date: "April 5, 2026",
     readTime: "2 min read",
-    image: "/assets/images/global-vision.jpg",
+    image: "/assets/images/news-teachwise.jpg?v=6",
     description:
       "The TeachWise mobile app crosses a major milestone, with educators and schools booking over one million shifts since launch.",
     content: [
@@ -123,7 +123,7 @@ const blogs = [
     category: "PRODUCT LAUNCH",
     date: "March 28, 2026",
     readTime: "4 min read",
-    image: "/assets/images/skyline.jpg",
+    image: "/assets/images/news-petrovate.jpg?v=6",
     description:
       "Petrovate opens access to its investor portal, giving qualified investors verified field-level data and direct revenue-share participation in producing wells.",
     content: [
@@ -139,7 +139,7 @@ const blogs = [
     category: "PARTNERSHIPS",
     date: "March 21, 2026",
     readTime: "3 min read",
-    image: "/assets/images/payroll.png",
+    image: "/assets/images/news-payroll.jpg?v=1",
     description:
       "A new partner programme enables UK accountants and bookkeepers to deliver Cedar Payroll's managed services and software to their clients.",
     content: [

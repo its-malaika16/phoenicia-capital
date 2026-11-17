@@ -98,11 +98,11 @@ export default function Footer() {
         </div>
 
         <div className="footer-legal">
-          <a href="#privacy">Privacy Policy</a>
+          <a href="/privacy.html">Privacy Policy</a>
           <span aria-hidden="true">|</span>
-          <a href="#cookies">Cookie Policy</a>
+          <a href="/cookies.html">Cookie Policy</a>
           <span aria-hidden="true">|</span>
-          <a href="#terms">Terms &amp; Conditions</a>
+          <a href="/terms.html">Terms &amp; Conditions</a>
         </div>
       </div>
     </footer>
