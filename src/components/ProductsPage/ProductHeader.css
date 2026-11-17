@@ -1,71 +1,132 @@
 .product-header {
-  position: relative;
-  height: 70vh;
-  width: 100%;
-  background-image: url("/assets/images/global-network.jpg"); /* ✅ change if needed */
-  background-size: cover;
-  background-position: center;
-  display: flex;
+  background: #f7f6f2;
+  padding: calc(var(--nav-height) + clamp(36px, 5vw, 72px)) clamp(20px, 6vw, 72px)
+    clamp(48px, 6vw, 88px);
+}
+
+.product-grid {
+  width: min(1140px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(280px, 1.05fr);
   align-items: center;
-  padding: 0 100px;
+  column-gap: clamp(20px, 3vw, 48px);
 }
 
-/* Overlay (dark purple like your design) */
-.product-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to right,
-    rgba(43, 35, 80, 0.95),
-    rgba(43, 35, 80, 0.7),
-    rgba(43, 35, 80, 0.3)
-  );
-  z-index: 1;
-}
-
-/* Content */
-.product-content {
-  position: relative;
-  z-index: 2;
-  color: white;
-  max-width: 600px;
-}
-
-/* Small title */
-.product-small {
-  font-size: 12px;
-  letter-spacing: 1px;
-  color: #c1976b;
-  margin-bottom: 15px;
+.product-kicker {
   display: block;
+  margin-bottom: 18px;
+  color: #c4a36a;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 
-/* Heading */
-.product-content h1 {
-  font-size: 64px;
-  font-weight: 600;
-  margin-bottom: 20px;
+.product-copy h1 {
+  margin: 0 0 22px;
+  color: #27215d;
+  font-size: clamp(34px, 3.4vw, 52px) !important;
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
 }
 
-/* Paragraph */
-.product-content p {
-  font-size: 18px;
-  color: white !important;
-  line-height: 1.6;
+.product-copy .product-line,
+.product-copy .is-navy,
+.product-copy .is-gold {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
 }
 
-/* ✅ Mobile */
-@media (max-width: 768px) {
-  .product-header {
-    height: 60vh;
-    padding: 0 20px;
+.product-copy .product-line {
+  white-space: nowrap;
+}
+
+.product-copy .is-navy {
+  color: #27215d;
+}
+
+.product-copy .is-gold {
+  color: #c4a36a;
+}
+
+.product-copy p {
+  max-width: 32em;
+  margin: 0;
+  color: #27215d;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+.product-art {
+  position: relative;
+  width: min(100%, 560px);
+  margin-left: auto;
+}
+
+.product-blob {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.product-blob-navy {
+  width: 38%;
+  aspect-ratio: 1;
+  background: #2a2458;
+  top: 1%;
+  right: 10%;
+}
+
+.product-blob-gold {
+  width: 34%;
+  aspect-ratio: 1;
+  background: #d8c6a4;
+  right: 1%;
+  bottom: 0;
+}
+
+.product-art img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (min-width: 2200px) {
+  .product-grid {
+    width: min(1360px, 100%);
   }
 
-  .product-content h1 {
-    font-size: 36px;
+  .product-copy h1 {
+    font-size: 60px !important;
   }
 
-  .product-content p {
-    font-size: 15px;
+  .product-art {
+    width: min(100%, 680px);
+  }
+}
+
+@media (max-width: 800px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+    row-gap: 28px;
+  }
+
+  .product-copy h1 {
+    font-size: clamp(28px, 8vw, 40px) !important;
+  }
+
+  .product-art {
+    width: min(100%, 460px);
+    margin: 0 auto;
   }
 }

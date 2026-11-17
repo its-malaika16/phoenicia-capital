@@ -1,73 +1,216 @@
 .contact-header {
   position: relative;
-  height: 75vh;
-  width: 100%;
-  background-image: url("/assets/images/global-network.jpg"); /* ✅ replace with your image */
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  padding: 0 100px;
+  overflow: hidden;
+  background: #f7f6f2;
+  padding: calc(var(--nav-height) + clamp(48px, 6vw, 88px)) clamp(20px, 6vw, 100px)
+    clamp(56px, 7vw, 96px);
 }
 
-/* ✅ Gradient overlay */
-.contact-overlay {
+.contact-inner {
+  position: relative;
+  z-index: 1;
+  width: min(1100px, 100%);
+  margin: 0 auto;
+}
+
+.contact-copy {
+  max-width: 640px;
+}
+
+.contact-kicker {
+  display: block;
+  margin-bottom: 18px;
+  color: #c4a36a;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  animation: contact-rise 0.7s ease both;
+}
+
+.contact-copy h1 {
+  margin: 0 0 22px;
+  color: #27215d;
+  font-size: clamp(40px, 4.4vw, 64px) !important;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  animation: contact-rise 0.8s 0.12s ease both;
+}
+
+.contact-copy .contact-line,
+.contact-copy .is-navy,
+.contact-copy .is-gold {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+}
+
+.contact-copy .contact-line {
+  white-space: nowrap;
+}
+
+.contact-copy .is-navy {
+  color: #27215d;
+}
+
+.contact-copy .is-gold {
+  color: #c4a36a;
+}
+
+.contact-copy p {
+  max-width: 32em;
+  margin: 0;
+  color: #27215d;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.65;
+  animation: contact-rise 0.8s 0.24s ease both;
+}
+
+.contact-rings {
+  position: absolute;
+  top: 50%;
+  right: -170px;
+  width: min(520px, 46vw);
+  aspect-ratio: 1;
+  transform: translateY(-50%);
+  pointer-events: none;
+  animation: contact-float 7s ease-in-out infinite;
+}
+
+.contact-ring {
+  position: absolute;
+  border-radius: 50%;
+  animation: contact-ring-in 1s ease both;
+}
+
+.contact-ring-sand {
+  inset: 0;
+  background: #eadfce;
+}
+
+.contact-ring-gold {
+  inset: 12%;
+  background: #c4a36a;
+  animation-delay: 0.12s;
+}
+
+.contact-ring-gold::after {
+  content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to right,
-    rgba(43, 35, 80, 0.95),
-    rgba(43, 35, 80, 0.75),
-    rgba(20, 40, 80, 0.7),
-    rgba(10, 50, 80, 0.5)
+  border-radius: 50%;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0 58%,
+    rgba(255, 246, 230, 0.7) 74%,
+    transparent 88%
   );
-  z-index: 1;
+  -webkit-mask: radial-gradient(circle, transparent 54%, #000 56%);
+  mask: radial-gradient(circle, transparent 54%, #000 56%);
+  animation: contact-spin 16s linear infinite;
 }
 
-/* ✅ Content */
-.contact-content {
-  position: relative;
-  z-index: 2;
-  max-width: 600px;
-  color: white;
+.contact-ring-navy {
+  inset: 26%;
+  background: #27215d;
+  animation-delay: 0.24s;
 }
 
-/* Small label */
-.contact-small {
-  font-size: 12px;
- letter-spacing: 1px; 
-  color: #c1976b;
-  display: block;
-  margin-bottom: 15px;
+@keyframes contact-rise {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
-/* Heading */
-.contact-content h1 {
-  font-size: 64px;
-  font-weight: 500;
-  line-height: 1.2;
-  margin-bottom: 20px;
+@keyframes contact-ring-in {
+  from {
+    opacity: 0;
+    transform: scale(0.72);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
-/* Paragraph */
-.contact-content p {
-  font-size: 17px;
-  line-height: 1.7;
-  color: rgba(255, 255, 255, 0.85);
+@keyframes contact-spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-/* ✅ MOBILE */
-@media (max-width: 768px) {
+@keyframes contact-float {
+  0%,
+  100% {
+    transform: translateY(-50%);
+  }
+  50% {
+    transform: translateY(calc(-50% - 12px));
+  }
+}
+
+@media (min-width: 2200px) {
+  .contact-copy h1 {
+    font-size: 72px !important;
+  }
+
+  .contact-rings {
+    width: 620px;
+    right: -200px;
+  }
+}
+
+@media (max-width: 800px) {
   .contact-header {
-    height: 60vh;
-    padding: 0 20px;
+    padding: calc(var(--nav-height) + 36px) 20px 48px;
   }
 
-  .contact-content h1 {
-    font-size: 36px;
+  .contact-copy {
+    padding-right: 28px;
   }
 
-  .contact-content p {
-    font-size: 15px;
+  .contact-copy h1 {
+    font-size: clamp(32px, 8.5vw, 44px) !important;
+  }
+
+  .contact-copy p {
+    font-size: 16px;
+  }
+
+  .contact-rings {
+    width: 118px;
+    right: -78px;
+    top: 70px;
+    animation-name: contact-float-mobile;
+  }
+}
+
+@keyframes contact-float-mobile {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-kicker,
+  .contact-copy h1,
+  .contact-copy p,
+  .contact-ring,
+  .contact-ring-gold::after,
+  .contact-rings {
+    animation: none;
   }
 }

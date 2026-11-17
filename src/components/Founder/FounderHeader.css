@@ -6,7 +6,7 @@
   background: #282560;
   color: white;
 
-  padding: 90px 5%;
+  padding: calc(var(--nav-height) + 28px) 5% 90px;
 }
 
 .top-line {

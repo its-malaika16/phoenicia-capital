@@ -1,50 +1,114 @@
 .philosophy-section {
-    padding: 80px 100px;
-  background: #fdf6f6;
+  background: #f8f7f3;
+  padding: clamp(56px, 6vw, 100px) clamp(20px, 6vw, 110px);
 }
 
-.philosophy-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    align-items: start;
-}
-
-/* Header */
-.philosophy-header {
-  display: flex;
-  justify-content: space-between;
+.philosophy-grid {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+  gap: clamp(28px, 4vw, 72px);
   align-items: center;
-  margin-bottom: 40px;
 }
 
-.small-title {
-  font-size: 12px;
-  letter-spacing: 2px;
-  color: #c5a46d;
+.philosophy-kicker {
+  display: block;
+  margin-bottom: 16px;
+  color: #c4a36a;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 
-.philosophy-header h2 {
-  font-size: 40px;
-  color: #282560;
+.philosophy-copy h2 {
+  margin: 0 0 22px;
+  max-width: 16em;
+  color: #27215d;
+  font-size: clamp(32px, 3.1vw, 48px) !important;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.08;
 }
 
-.philosophy-content p {
-  font-size: 16px;
-  color: #282560;
-  max-width: 400px;
-  margin-bottom: 25px;
+.philosophy-copy p {
+  max-width: 38em;
+  margin: 0 0 28px;
+  color: #27215d;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.65;
 }
 
+.philosophy-link {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #c4a36a;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  cursor: pointer;
+}
 
-/* ✅ Mobile (stack vertically) */
-@media (max-width: 768px) {
+.philosophy-link:hover {
+  color: #27215d;
+}
+
+.philosophy-link:focus-visible {
+  outline: 2px solid #27215d;
+  outline-offset: 4px;
+}
+
+.philosophy-art {
+  width: min(100%, 460px);
+  justify-self: end;
+}
+
+.philosophy-art img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 2200px) {
+  .philosophy-grid {
+    width: min(1180px, 100%);
+  }
+
+  .philosophy-copy h2 {
+    font-size: 52px !important;
+  }
+
+  .philosophy-copy p {
+    font-size: 19px;
+  }
+
+  .philosophy-art {
+    width: min(100%, 520px);
+  }
+}
+
+@media (max-width: 800px) {
   .philosophy-section {
-    padding: 50px 20px;
+    padding: 48px 20px 64px;
   }
 
   .philosophy-grid {
     grid-template-columns: 1fr;
-    gap: 30px;
+  }
+
+  .philosophy-copy h2 {
+    font-size: clamp(30px, 8vw, 40px) !important;
+  }
+
+  .philosophy-art {
+    width: min(100%, 420px);
+    margin-inline: auto;
+    justify-self: center;
   }
 }

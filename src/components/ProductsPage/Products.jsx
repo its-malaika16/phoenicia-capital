@@ -14,7 +14,7 @@ const products = [
       "Multi-sector reach",
       "Fast turnaround hiring",
     ],
-    image: "/assets/images/teachwise.png",
+    image: "/assets/images/teachwise-card.png?v=2",
     url: "https://teachwise.co.uk",
   },
   {
@@ -30,7 +30,7 @@ const products = [
       "Production efficiency increase",
       "Global field deployment",
     ],
-    image: "/assets/images/petrovate.png",
+    image: "/assets/images/petrovate-card.png?v=3",
     url: "https://petrovate.co.uk",
   },
   {
@@ -46,7 +46,7 @@ const products = [
       "Secure banking",
       "Business solutions",
     ],
-    image: "/assets/images/bank.png",
+    image: "/assets/images/cedar-bank-card.png?v=1",
     url: "https://cedarcapitalbank.com",
   },
   {
@@ -62,7 +62,7 @@ const products = [
       "Employee portal",
       "Real-time reporting",
     ],
-    image: "/assets/images/payroll.png",
+    image: "/assets/images/cedar-payroll-card.png?v=1",
     url: "https://cedarpayroll.co.uk",
   },
 ];
@@ -93,11 +93,14 @@ export default function ProductsPageSection() {
 
             <ul>
               {product.features.map((f, i) => (
-                <li key={i}>✔ {f}</li>
+                <li key={i}>
+                <span className="product-check">✓</span>
+                {f}
+              </li>
               ))}
             </ul>
 
-            {/* ✅ FIXED BUTTON */}
+            {/* Visit button */}
             <a
               href={product.url}
               target="_blank"

@@ -1,76 +1,101 @@
 .story-header {
-  position: relative;
-  height: 75vh;
-  width: 100%;
-  background-image: url("/assets/images/global-vision.jpg"); /* ✅ replace with your image */
-  background-size: cover;
-  background-position: center;
-  display: flex;
+  background: #f7f6f2;
+  padding: calc(var(--nav-height) + clamp(36px, 5vw, 72px)) clamp(20px, 6vw, 72px)
+    clamp(48px, 6vw, 88px);
+}
+
+.story-grid {
+  width: min(1140px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(240px, 0.75fr);
   align-items: center;
-  padding: 0 100px;
+  column-gap: clamp(20px, 3vw, 40px);
 }
 
-/* ✅ Purple overlay */
-.story-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to right,
-    rgba(43, 35, 80, 0.95),
-    rgba(43, 35, 80, 0.75),
-    rgba(43, 35, 80, 0.35),
-    transparent
-  );
-  z-index: 1;
-}
-
-.gold {
-  color: #c1976b;
-}
-
-/* ✅ Content */
-.story-content {
-  position: relative;
-  z-index: 2;
-  max-width: 650px;
-  color: white;
-}
-
-/* Small label */
-.story-small {
-  letter-spacing: 1px;
-  color: #c1976b;
+.story-kicker {
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
+  color: #c4a36a;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 
-/* Heading */
-.story-content h1 {
-  /* font-size: 64px; */
-  /* font-weight: 500; */
-  line-height: 1.1;
-  margin-bottom: 20px;
+.story-copy h1 {
+  margin: 0 0 22px;
+  color: #27215d;
+  font-size: clamp(36px, 3.6vw, 56px) !important;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
 }
 
-/* Paragraph */
-.story-content p {
+.story-copy .story-line,
+.story-copy .is-navy,
+.story-copy .is-gold {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+}
+
+.story-copy .story-line {
+  white-space: nowrap;
+}
+
+.story-copy .is-navy {
+  color: #27215d;
+}
+
+.story-copy .is-gold {
+  color: #c4a36a;
+}
+
+.story-copy p {
+  max-width: 34em;
+  color: #27215d;
   font-size: 17px;
-  line-height: 1.7;
-  color: rgba(255, 255, 255, 0.85);
+  font-weight: 400;
+  line-height: 1.65;
 }
 
-/* ✅ Mobile */
-@media (max-width: 768px) {
-  .story-header {
-    height: 65vh;
-    padding: 0 20px;
+.story-art img {
+  display: block;
+  width: min(100%, 460px);
+  height: auto;
+  margin-left: auto;
+  object-fit: contain;
+}
+
+@media (min-width: 2200px) {
+  .story-grid {
+    width: min(1360px, 100%);
   }
 
-  .story-content h1 {
-    font-size: 36px;
+  .story-copy h1 {
+    font-size: 68px !important;
   }
 
-  .story-content p {
-    font-size: 15px;
+  .story-art img {
+    width: min(100%, 600px);
+  }
+}
+
+@media (max-width: 800px) {
+  .story-grid {
+    grid-template-columns: 1fr;
+    row-gap: 28px;
+  }
+
+  .story-copy h1 {
+    font-size: clamp(32px, 9vw, 46px) !important;
+  }
+
+  .story-art img {
+    width: min(100%, 420px);
+    margin: 0 auto;
   }
 }

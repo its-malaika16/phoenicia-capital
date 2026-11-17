@@ -3,17 +3,15 @@ import "./PurposeSection.css";
 export default function PurposeSection() {
   return (
     <section className="purpose-section">
-
       <div className="purpose-grid">
-
-        {/* LEFT CONTENT */}
         <div className="purpose-content">
-          <span className="purpose-small subheading">OUR PURPOSE</span>
-
+          <span className="purpose-kicker">Our Purpose</span>
           <h2>
-            Building the <br />
-            institutions of the next <br />
-            century.
+            <span className="is-navy">Building The</span>
+            <br />
+            <span className="is-gold">Institutions Of The</span>
+            <br />
+            <span className="is-navy">Next Century.</span>
           </h2>
 
           <p>
@@ -27,25 +25,27 @@ export default function PurposeSection() {
             people who shape young minds. Through <strong>Petrovate</strong>, we
             apply intelligent technology to the wells that power industry.
             Through <strong>Cedar Capital Bank</strong>, we give modern banks
-            and fintechs a single platform to move money globally. And through
-            <strong> Cedar Payroll</strong>, we make sure employees across the
-            UK are paid accurately and on time.
+            and fintechs a single platform to move money globally. And through{" "}
+            <strong>Cedar Payroll</strong>, we make sure employees across the UK
+            are paid accurately and on time.
           </p>
 
-          <p>
-            Four ventures, one conviction: the best businesses are built
-            patiently, owned carefully, and held for generations.
+          <p className="purpose-close">
+            <strong>Four ventures, one conviction:</strong> the best businesses
+            are built patiently, owned carefully, and held for generations.
           </p>
         </div>
 
-        {/* RIGHT IMAGE */}
-        <div className="purpose-image">
-          <img src="/assets/images/global-network.jpg" alt="Purpose" />
+        <div className="purpose-art" aria-hidden="true">
+          <img
+            src="/assets/images/purpose-target.png"
+            alt=""
+            width="740"
+            height="731"
+            draggable="false"
+          />
         </div>
-
       </div>
-
     </section>
   );
 }
-``

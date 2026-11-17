@@ -1,85 +1,103 @@
-import { useState } from "react";
-import { NavLink } from "react-router-dom"; // ✅ important
+import { useEffect, useState } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import "./Navbar.css";
-import phoenicialogo from "/assets/logo/phoeniciaLogo.png";
-import { COLORS } from "../../constants/colors.js";
 
-function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false);
+const LINKS = [
+  { to: "/", label: "Home", end: true },
+  { to: "/story", label: "Our Story" },
+  { to: "/products", label: "Products" },
+  { to: "/founder", label: "Founder" },
+  { to: "/blogs", label: "Blogs" },
+];
+
+export default function Navbar() {
+  const [open, setOpen] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    setOpen(false);
+  }, [location.pathname]);
+
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
+
+  useEffect(() => {
+    const onKey = (event) => {
+      if (event.key === "Escape") setOpen(false);
+    };
+    const onResize = () => {
+      if (window.innerWidth > 1180) setOpen(false);
+    };
+
+    window.addEventListener("keydown", onKey);
+    window.addEventListener("resize", onResize);
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      window.removeEventListener("resize", onResize);
+    };
+  }, []);
 
   return (
-    <nav className="navbar">
+    <header className="navbar">
       <div className="navbar-container">
-
-        {/* ✅ Logo Section */}
-        <div className="navbar-logo">
+        <NavLink to="/" className="navbar-logo" aria-label="Phoenicia Capital Holdings" end>
           <img
-            src={phoenicialogo}
-            alt="Phoenicia Capital"
-            className="logo"
+            className="logo-ship"
+            src="/assets/logo/phoenicia-ship.png?v=2"
+            alt=""
+            width="596"
+            height="523"
+            draggable="false"
           />
-          <div className="website-name">
-            <span style={{ color: COLORS.appname, fontSize: "1.2em" }}>
-              Phoenicia Capital
-            </span>
-            <span style={{ color: COLORS.secondary }}>
-              Holdings
-            </span>
-          </div>
-        </div>
+          <img
+            className="logo-word"
+            src="/assets/logo/phoenicia-word.png?v=2"
+            alt=""
+            width="1172"
+            height="272"
+            draggable="false"
+          />
+        </NavLink>
 
-        {/* ✅ Navigation Links */}
-        <ul className={menuOpen ? "nav-links active" : "nav-links"}>
-          
-          <li>
-            <NavLink to="/" className="nav-link">
-              Home
-            </NavLink>
-          </li>
-
-          <li>
-            <NavLink to="/story" className="nav-link">
-              Our Story
-            </NavLink>
-          </li>
-
-          <li>
-            <NavLink to="/products" className="nav-link">
-              Products
-            </NavLink>
-          </li>
-
-          <li>
-            <NavLink to="/founder" className="nav-link">
-              Founder
-            </NavLink>
-          </li>
-
-          <li>
-            <NavLink to="/blogs" className="nav-link">
-              Blogs
-            </NavLink>
-          </li>
-
-          <li>
-            <NavLink to="/contact" className="nav-link">
-              Contact
-            </NavLink>
-          </li>
-
-        </ul>
-
-        {/* ✅ Mobile Menu Toggle */}
-        <div
-          className="menu-toggle"
-          onClick={() => setMenuOpen(!menuOpen)}
+        <button
+          type="button"
+          className={open ? "menu-toggle open" : "menu-toggle"}
+          aria-label={open ? "Close menu" : "Open menu"}
+          aria-expanded={open}
+          onClick={() => setOpen((value) => !value)}
         >
-          ☰
-        </div>
+          <span />
+          <span />
+          <span />
+        </button>
 
+        <nav
+          className={open ? "nav-links open" : "nav-links"}
+          aria-label="Primary"
+        >
+          {LINKS.map((link) => (
+            <NavLink
+              key={link.to}
+              to={link.to}
+              end={link.end}
+              className="nav-link"
+            >
+              {link.label}
+            </NavLink>
+          ))}
+          <NavLink to="/contact" className="nav-contact nav-contact-mobile">
+            Contact
+          </NavLink>
+        </nav>
+
+        <NavLink to="/contact" className="nav-contact nav-contact-desktop">
+          Contact
+        </NavLink>
       </div>
-    </nav>
+    </header>
   );
 }
-
-export default Navbar;

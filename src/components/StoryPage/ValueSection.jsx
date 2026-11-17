@@ -1,93 +1,82 @@
 import "./ValueSection.css";
 
-/* ✅ Shield */
 const ShieldIcon = () => (
-  <svg viewBox="0 0 24 24">
-    <path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-3z" />
-    <path d="M9 12l2 2 4-4" />
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M12 3.2l7 3v5.2c0 4.6-3.2 7.8-7 9.4-3.8-1.6-7-4.8-7-9.4V6.2l7-3z" />
+    <path d="M9 12.1l2 2 4-4" />
   </svg>
 );
 
-/* ✅ Diamond */
 const DiamondIcon = () => (
-  <svg viewBox="0 0 24 24">
-    <path d="M7 4h10l4 5-9 11L3 9l4-5z" />
-    <path d="M7 4l5 16" />
-    <path d="M17 4l-5 16" />
-    <path d="M3 9h18" />
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M7 4.5h10l4 5.2-9 10.3L3 9.7l4-5.2z" />
+    <path d="M3 9.7h18" />
+    <path d="M8.2 9.7L12 4.5l3.8 5.2" />
+    <path d="M8.2 9.7L12 20" />
+    <path d="M15.8 9.7L12 20" />
   </svg>
 );
 
-/* ✅ Sprout */
 const SproutIcon = () => (
-  <svg viewBox="0 0 24 24">
-    <path d="M12 20v-8" />
-    <path d="M12 12c0-3-2-5-5-5 0 3 2 5 5 5z" />
-    <path d="M12 12c0-3 2-5 5-5 0 3-2 5-5 5z" />
-    <path d="M7 20h10" />
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M12 20.5V11" />
+    <path d="M12 12.2C12 8.6 9.6 6.2 6 6.2c0 3.6 2.4 6 6 6z" />
+    <path d="M12 12.2c0-3.6 2.4-6 6-6 0 3.6-2.4 6-6 6z" />
   </svg>
 );
 
-/* ✅ Compass */
-const CompassIcon = () => (
-  <svg viewBox="0 0 24 24">
-    <circle cx="12" cy="12" r="9" />
-    <path d="M15.5 8.5l-3 7-4-4 7-3z" />
-  </svg>
+const TargetIcon = () => (
+  <img
+    src="/assets/icons/purpose-objective.png?v=2"
+    alt=""
+    width="49"
+    height="49"
+    draggable="false"
+  />
 );
 
 const values = [
   {
     title: "Integrity",
     desc: "We operate with transparency and principled judgment across every venture from banking to payroll to education.",
-    icon: <ShieldIcon />
+    icon: <ShieldIcon />,
   },
   {
     title: "Craft",
     desc: "Whether building AI for energy wells or platforms for schools, we obsess over the details that compound over decades.",
-    icon: <DiamondIcon />
+    icon: <DiamondIcon />,
   },
   {
     title: "Patience",
     desc: "Our capital is patient. We back companies that grow deliberately and reward stewardship over speculation.",
-    icon: <SproutIcon />
+    icon: <SproutIcon />,
   },
   {
     title: "Purpose",
     desc: "Every business we own must serve real people; teachers, employers, depositors, operators with measurable utility.",
-    icon: <CompassIcon />
-  }
+    icon: <TargetIcon />,
+  },
 ];
 
 export default function ValuesSection() {
   return (
     <section className="values-section">
+      <div className="values-inner">
+        <header className="values-header">
+          <span className="values-kicker">Our Value</span>
+          <h2>The principles behind every venture.</h2>
+        </header>
 
-      <div className="values-header">
-        <span className="values-small subheading">
-          <span className="line"></span>
-          OUR VALUES
-          <span className="line"></span>
-        </span>
-
-        <h2>The principles behind every venture.</h2>
+        <div className="values-grid">
+          {values.map((item) => (
+            <article key={item.title} className="value-card">
+              <div className="value-icon">{item.icon}</div>
+              <h3>{item.title}</h3>
+              <p>{item.desc}</p>
+            </article>
+          ))}
+        </div>
       </div>
-
-      <div className="values-grid">
-        {values.map((item, i) => (
-          <div key={i} className="value-card">
-
-            <div className="value-icon">
-              {item.icon}
-            </div>
-
-            <h3>{item.title}</h3>
-            <p>{item.desc}</p>
-
-          </div>
-        ))}
-      </div>
-
     </section>
   );
 }

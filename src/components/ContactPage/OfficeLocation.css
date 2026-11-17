@@ -1,86 +1,77 @@
 .office-section {
-    border-top: 1px solid #eee;
-  padding: 80px 100px;
-  background: #f8f8fb;
+  background: #f7f6f2;
+  padding: clamp(56px, 7vw, 96px) clamp(20px, 6vw, 100px);
 }
 
-/* ✅ GRID */
-.office-grid {
+.office-inner {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 60px;
+  grid-template-columns: minmax(260px, 0.82fr) minmax(300px, 1.18fr);
+  gap: clamp(32px, 5vw, 72px);
   align-items: center;
+  width: min(1100px, 100%);
+  margin: 0 auto;
 }
 
-/* LEFT */
-.office-small {
-  font-size: 12px;
-  letter-spacing: 1px;
-  color: #c49a63;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 20px;
+.office-kicker {
+  display: block;
+  margin-bottom: 22px;
+  color: #c4a36a;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 
-.office-small .line {
-  width: 40px;
-  height: 1px;
-  background: #c49a63;
+.office-copy h2 {
+  margin: 0 0 18px;
+  color: #27215d;
+  font-size: clamp(32px, 3.2vw, 42px) !important;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
 }
 
-/* Heading */
-.office-left h2 {
-  font-size: 42px;
-  color: #282560;
-  margin-bottom: 20px;
+.office-copy h2.office-region {
+  margin-top: 36px;
 }
 
-/* Details */
-.office-details strong {
+.office-place + .office-place {
+  margin-top: 16px;
+}
+
+.office-place p {
+  margin: 0;
+  color: #27215d;
   font-size: 16px;
-  color: #282560;
-}
-
-.office-details p {
-  margin: 5px 0;
-  color: #555;
-}
-
-/* Link */
-.map-link {
-  display: inline-block;
-  margin-top: 25px;
-  font-size: 13px;
-  letter-spacing: 1px;
-  text-decoration: none;
-  color: #c49a63;
   font-weight: 500;
+  line-height: 1.45;
 }
 
-/* MAP */
-.office-map iframe {
+.office-place .is-gold {
+  color: #c4a36a;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+.office-map img {
+  display: block;
   width: 100%;
-  height: 350px;
-  border-radius: 8px;
-  border: none;
+  height: auto;
+  object-fit: contain;
 }
 
-/* ✅ MOBILE */
-@media (max-width: 768px) {
-  .office-section {
-    padding: 50px 20px;
-  }
-
-  .office-grid {
+@media (max-width: 800px) {
+  .office-inner {
     grid-template-columns: 1fr;
   }
 
-  .office-left h2 {
-    font-size: 28px;
+  .office-map {
+    max-width: 520px;
   }
 
-  .office-map iframe {
-    height: 250px;
+  .office-copy h2 {
+    font-size: 32px !important;
   }
 }

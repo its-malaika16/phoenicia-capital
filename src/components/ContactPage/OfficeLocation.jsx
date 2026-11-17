@@ -3,48 +3,46 @@ import "./OfficeLocation.css";
 export default function OfficeLocation() {
   return (
     <section className="office-section">
+      <div className="office-inner">
+        <div className="office-copy">
+          <span className="office-kicker">Our Location</span>
 
-      <div className="office-grid">
+          <h2>Middle East</h2>
 
-        {/* ✅ LEFT SIDE */}
-        <div className="office-left">
-
-          <span className="office-small subheading">
-            <span className="line"></span>
-            OFFICE LOCATION
-          </span>
-
-          <h2>Dubai, UAE</h2>
-
-          <div className="office-details">
-            <strong>Blue Bay Tower</strong>
-            <p>Business Bay</p>
-            <p>Dubai, United Arab Emirates</p>
+          <div className="office-place">
+            <p>
+              <span className="is-gold">Dubai</span> - Business Bay
+            </p>
+            <p>Blue Bay tower</p>
           </div>
 
-          <a
-            href="https://www.google.com/maps/place/Blue+Bay+Tower,+Business+Bay,+Dubai"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="map-link"
-          >
-            OPEN IN GOOGLE MAPS ↗
-          </a>
+          <div className="office-place">
+            <p>
+              <span className="is-gold">Beirut</span> - Pierre Gemayel Avenue
+            </p>
+            <p>Rive Gauche Tower - Floor 10</p>
+          </div>
 
+          <h2 className="office-region">United Kingdom</h2>
+
+          <div className="office-place">
+            <p>
+              <span className="is-gold">London</span> - 12 Old Bond Street,
+            </p>
+            <p>Mayfair, W1S 4PW</p>
+          </div>
         </div>
 
-        {/* ✅ RIGHT SIDE (Google Map) */}
         <div className="office-map">
-          <iframe
-            src="https://maps.google.com/maps?q=Blue%20Bay%20Tower%20Dubai&t=&z=15&ie=UTF8&iwloc=&output=embed"
-            title="map"
-            frameBorder="0"
-            allowFullScreen
-          ></iframe>
+          <img
+            src="/assets/images/location-map.png?v=1"
+            alt="United Kingdom and the Middle East"
+            width="2319"
+            height="1641"
+            draggable="false"
+          />
         </div>
-
       </div>
-
     </section>
   );
 }

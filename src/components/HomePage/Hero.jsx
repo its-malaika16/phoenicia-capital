@@ -1,97 +1,36 @@
-import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Hero.css";
 
-const images = [
-  "/assets/images/skyline.jpg",
-  "/assets/images/global-finance.jpg",
-  "/assets/images/digital-banking.jpg",
-];
-
-const textSlides = [
-  {
-    small: "Phoenicia Capital Holdings",
-    headingWhite: "Building Stronger Futures Across",
-    headingGold: " Industries",
-    paragraph:
-      "Phoenicia Capital Holdings is a diversified global group driving innovation in finance, education, energy, and business services through trusted brands and forward-thinking solutions.",
-  },
-  {
-    small: "What We Do",
-    headingWhite: "One Vision. Multiple Industries. Endless",
-    headingGold: " Possibilities",
-    paragraph:
-      "Phoenicia Capital Holdings brings together innovative businesses across finance, education, energy, and technology to shape a smarter and more connected future.",
-  },
-  {
-    small: "Our Mission",
-    headingWhite: "Empowering Growth Through Vision &",
-    headingGold: " Innovation",
-    paragraph:
-      "From digital banking and payroll solutions to education recruitment and energy services, we build companies designed to create long-term impact and sustainable success.",
-  },
-];
-
 export default function Hero() {
-  const [index, setIndex] = useState(0);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prev) => (prev + 1) % images.length);
-    }, 7000);
-
-    return () => clearInterval(interval);
-  }, []);
-
   return (
-    <div className="hero-container">
-
-      {/* Slider */}
-      <div
-        className="hero-slider font-bold"
-        style={{ transform: `translateX(-${index * 100}%)` }}
-      >
-        {images.map((img, i) => (
-          <div
-            key={i}
-            className="hero-slide"
-            style={{ backgroundImage: `url(${img})` }}
-          />
-        ))}
-      </div>
-
-      {/* Overlay */}
-      <div className="hero-overlay" />
-
-      {/* Content */}
-      <div className="hero-content">
-        <span className="hero-small subheading">
-          {textSlides[index].small}
-        </span>
-
-        <h1 className="hero-heading font-medium">
-          {textSlides[index].headingWhite}
-          <span className="yellow-text gold">
-            {textSlides[index].headingGold}
-          </span>
+    <section className="hero" aria-label="Introduction">
+      <div className="hero-frame">
+      <div className="hero-copy">
+        <h1 className="hero-title">
+          <span className="hero-line">Building Stronger</span>
+          <span className="hero-line">Futures</span>
+          <span className="hero-line hero-accent">Across Industries</span>
         </h1>
 
-        <p className="hero-paragraph">
-          {textSlides[index].paragraph}
+        <span className="hero-rule" aria-hidden="true" />
+
+        <p className="hero-text">
+          Phoenicia Capital Holdings is a diversified global group driving
+          innovation in finance, education, energy, and business services
+          through trusted brands and forward-thinking solutions.
         </p>
 
-        {/* Buttons */}
-        <div className="hero-buttons">
+        <div className="hero-actions">
           <button
-            className="primary-btn"
+            className="hero-btn hero-btn-primary"
             onClick={() => navigate("/contact")}
           >
             Get Started
           </button>
-
           <button
-            className="secondary-btn"
+            className="hero-btn hero-btn-ghost"
             onClick={() => navigate("/story")}
           >
             Learn More
@@ -99,17 +38,28 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Dots */}
-      <div className="hero-dots">
-        {images.map((_, i) => (
-          <button
-            key={i}
-            className={i === index ? "dot active" : "dot"}
-            onClick={() => setIndex(i)}
-          />
-        ))}
-      </div>
+      <div className="hero-visual">
+        <img
+          className="hero-logo"
+          src="/assets/logo/phoenicia-word.png"
+          alt="Phoenicia Capital Holdings"
+          width="1172"
+          height="272"
+          draggable="false"
+        />
 
-    </div>
+        <div className="hero-art">
+          <img
+            className="hero-globe"
+            src="/assets/images/hero-globe.png?v=3"
+            alt="Globe with a rising bar chart"
+            width="2236"
+            height="1688"
+            draggable="false"
+          />
+        </div>
+      </div>
+      </div>
+    </section>
   );
 }

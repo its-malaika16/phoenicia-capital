@@ -1,30 +1,18 @@
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function BlogCard({ blog }) {
-  const navigate = useNavigate();
-
   return (
-    <div
-      className="blog-card"
-      onClick={() => navigate(`/blogs/${blog.id}`)}
-    >
-      <img src={blog.image} alt={blog.title} />
-
+    <Link className="blog-card" to={`/blogs/${blog.id}`}>
       <div className="blog-content">
         <span className="blog-category">{blog.category}</span>
-
-        <h4 className="subheading" style={{ fontWeight: "bold" }}>
-          {blog.title}
-        </h4>
+        <h3>{blog.title}</h3>
         <p>{blog.description}</p>
-
-        <br></br>
-
         <div className="blog-footer">
           <span>{blog.date}</span>
-          <span>Read →</span>
+          <span className="blog-read">Read &gt;</span>
         </div>
       </div>
-    </div>
+      <img src={blog.image} alt="" width="1024" height="1024" />
+    </Link>
   );
 }
