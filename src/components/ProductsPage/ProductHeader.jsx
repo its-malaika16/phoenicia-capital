@@ -32,10 +32,10 @@ export default function ProductHeader() {
           <span className="product-blob product-blob-navy"></span>
           <span className="product-blob product-blob-gold"></span>
           <img
-            src="/assets/images/products-laptop.png?v=2"
+            src="/assets/images/products-laptop.png?v=3"
             alt=""
-            width="1280"
-            height="720"
+            width="1908"
+            height="1198"
             draggable="false"
           />
         </div>

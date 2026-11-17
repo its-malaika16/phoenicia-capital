@@ -1,6 +1,6 @@
 .contact-section {
   background: #f7f6f2;
-  padding: 8px clamp(20px, 6vw, 100px) clamp(64px, 8vw, 96px);
+  padding: 72px clamp(20px, 6vw, 100px) clamp(64px, 8vw, 96px);
 }
 
 .contact-form-inner {
@@ -12,9 +12,9 @@
   display: block;
   margin-bottom: 16px;
   color: #c4a36a;
-  font-size: 14px;
+  font-size: 26px;
   font-weight: 700;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.06em;
   line-height: 1.2;
   text-transform: uppercase;
 }
@@ -82,7 +82,7 @@
 .contact-form textarea {
   width: 100%;
   border: none;
-  border-radius: 999px;
+  border-radius: 10px;
   background: #eadfce;
   color: #27215d;
   font-size: 15px;
@@ -100,7 +100,7 @@
 .contact-form textarea {
   min-height: 148px;
   padding: 16px 22px;
-  border-radius: 22px;
+  border-radius: 10px;
   resize: vertical;
 }
 

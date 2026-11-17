@@ -3,14 +3,6 @@
   padding: clamp(36px, 4vw, 64px) clamp(20px, 6vw, 110px) clamp(72px, 7vw, 120px);
 }
 
-.portfolio::before {
-  content: "";
-  display: block;
-  height: 1px;
-  margin: 0 auto clamp(28px, 3.2vw, 44px);
-  background: #d5d0c8;
-}
-
 .portfolio-inner {
   width: min(1180px, 100%);
   margin: 0 auto;

@@ -10,7 +10,7 @@ export default function FounderHeader() {
 
         {/* LEFT IMAGE */}
         <div className="founder-image">
-          <img src="/assets/images/FounderPic.jpeg" alt="Founder" />
+          <img src="/assets/images/ali_sir.svg" alt="Founder" />
 
           <div className="name-card">
             <h4>Ali A Hammoud</h4>

@@ -35,10 +35,10 @@ export default function OfficeLocation() {
 
         <div className="office-map">
           <img
-            src="/assets/images/location-map.png?v=1"
+            src="/assets/images/location-map.png?v=2"
             alt="United Kingdom and the Middle East"
-            width="2319"
-            height="1641"
+            width="4542"
+            height="3186"
             draggable="false"
           />
         </div>

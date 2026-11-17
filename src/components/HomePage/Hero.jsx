@@ -41,10 +41,10 @@ export default function Hero() {
       <div className="hero-visual">
         <img
           className="hero-logo"
-          src="/assets/logo/phoenicia-word.png"
+          src="/assets/logo/phoenicia-word.png?v=4"
           alt="Phoenicia Capital Holdings"
-          width="1172"
-          height="272"
+          width="3516"
+          height="816"
           draggable="false"
         />
 

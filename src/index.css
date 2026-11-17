@@ -76,3 +76,8 @@ h6 {
   font-weight: 700;
   line-height: 1.2;
 }
+
+section + section,
+section + footer {
+  border-top: 1px solid #e0dcd4;
+}

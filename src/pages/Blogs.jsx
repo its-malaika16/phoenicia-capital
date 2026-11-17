@@ -2,6 +2,7 @@ import blogs from "../data/blogs";
 import BlogCard from "../components/BlogCards/BlogCard";
 import "../styles/Blogs.css";
 import BlogHero from "../components/BlogCards/BlogHero";
+import Footer from "../components/Footer/Footer";
 
 const cardImages = {
   1: "/assets/images/news-cedar-bank.jpg?v=6",
@@ -17,17 +18,20 @@ const cardImages = {
 
 export default function Blogs() {
   return (
-    <div className="blogs-section">
-      <BlogHero />
+    <>
+      <div className="blogs-section">
+        <BlogHero />
 
-      <div className="blogs-grid">
-        {blogs.map((blog) => (
-          <BlogCard
-            key={blog.id}
-            blog={{ ...blog, image: cardImages[blog.id] || blog.image }}
-          />
-        ))}
+        <div className="blogs-grid">
+          {blogs.map((blog) => (
+            <BlogCard
+              key={blog.id}
+              blog={{ ...blog, image: cardImages[blog.id] || blog.image }}
+            />
+          ))}
+        </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 }

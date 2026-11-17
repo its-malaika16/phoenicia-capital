@@ -72,52 +72,50 @@
 
 .contact-rings {
   position: absolute;
-  top: 50%;
-  right: -170px;
-  width: min(520px, 46vw);
+  top: calc(var(--nav-height) + 36px);
+  height: calc(100% - var(--nav-height) - 72px);
+  right: 0;
+  width: auto;
   aspect-ratio: 1;
-  transform: translateY(-50%);
+  --ring-x: 46%;
+  transform: translateX(var(--ring-x));
+  transform-origin: 72% center;
   pointer-events: none;
-  animation: contact-float 7s ease-in-out infinite;
+  animation: contact-bloom 1.35s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 .contact-ring {
   position: absolute;
   border-radius: 50%;
-  animation: contact-ring-in 1s ease both;
+  transform-origin: 72% center;
+  animation: contact-ring-bloom 1.05s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 .contact-ring-sand {
   inset: 0;
   background: #eadfce;
+  --sway: 24px;
+  animation:
+    contact-ring-bloom 1.05s cubic-bezier(0.16, 1, 0.3, 1) both,
+    contact-ring-sway 4.2s ease-in-out 1.45s infinite;
 }
 
 .contact-ring-gold {
   inset: 12%;
   background: #c4a36a;
-  animation-delay: 0.12s;
-}
-
-.contact-ring-gold::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  background: conic-gradient(
-    from 0deg,
-    transparent 0 58%,
-    rgba(255, 246, 230, 0.7) 74%,
-    transparent 88%
-  );
-  -webkit-mask: radial-gradient(circle, transparent 54%, #000 56%);
-  mask: radial-gradient(circle, transparent 54%, #000 56%);
-  animation: contact-spin 16s linear infinite;
+  --sway: 20px;
+  animation:
+    contact-ring-bloom 1.05s cubic-bezier(0.16, 1, 0.3, 1) 0.12s both,
+    contact-ring-sway 4.2s ease-in-out 1.45s infinite;
 }
 
 .contact-ring-navy {
   inset: 26%;
   background: #27215d;
-  animation-delay: 0.24s;
+  --sway: 16px;
+  animation:
+    contact-ring-bloom 1.05s cubic-bezier(0.16, 1, 0.3, 1) 0.24s both,
+    contact-ring-sway 4.2s ease-in-out 1.45s infinite;
 }
 
 @keyframes contact-rise {
@@ -131,41 +129,47 @@
   }
 }
 
-@keyframes contact-ring-in {
-  from {
+@keyframes contact-bloom {
+  0% {
     opacity: 0;
+    transform: translateX(calc(var(--ring-x) + 8%)) scale(0.78);
+  }
+  40% {
+    opacity: 1;
+    transform: translateX(calc(var(--ring-x) + 10%)) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(var(--ring-x)) scale(1);
+  }
+}
+
+@keyframes contact-ring-bloom {
+  0% {
     transform: scale(0.72);
   }
-  to {
-    opacity: 1;
+  42% {
+    transform: scale(0.86);
+  }
+  100% {
     transform: scale(1);
   }
 }
 
-@keyframes contact-spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes contact-float {
+@keyframes contact-ring-sway {
   0%,
+  18%,
   100% {
-    transform: translateY(-50%);
+    transform: translateX(0);
   }
-  50% {
-    transform: translateY(calc(-50% - 12px));
+  48% {
+    transform: translateX(var(--sway));
   }
 }
 
 @media (min-width: 2200px) {
   .contact-copy h1 {
     font-size: 72px !important;
-  }
-
-  .contact-rings {
-    width: 620px;
-    right: -200px;
   }
 }
 

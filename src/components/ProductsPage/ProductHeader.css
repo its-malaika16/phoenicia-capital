@@ -77,19 +77,41 @@
 }
 
 .product-blob-navy {
-  width: 38%;
+  width: 46%;
   aspect-ratio: 1;
   background: #2a2458;
-  top: 1%;
-  right: 10%;
+  top: -6%;
+  right: 4%;
+  animation: product-blob-navy 8s ease-in-out infinite;
 }
 
 .product-blob-gold {
-  width: 34%;
+  width: 42%;
   aspect-ratio: 1;
   background: #d8c6a4;
-  right: 1%;
-  bottom: 0;
+  right: -4%;
+  bottom: -8%;
+  animation: product-blob-gold 9s ease-in-out infinite;
+}
+
+@keyframes product-blob-navy {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-12px, 16px) scale(1.06);
+  }
+}
+
+@keyframes product-blob-gold {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-8px, -18px) scale(1.08);
+  }
 }
 
 .product-art img {
@@ -128,5 +150,12 @@
   .product-art {
     width: min(100%, 460px);
     margin: 0 auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .product-blob-navy,
+  .product-blob-gold {
+    animation: none;
   }
 }

@@ -47,18 +47,18 @@ export default function Navbar() {
         <NavLink to="/" className="navbar-logo" aria-label="Phoenicia Capital Holdings" end>
           <img
             className="logo-ship"
-            src="/assets/logo/phoenicia-ship.png?v=2"
+            src="/assets/logo/phoenicia-ship.png?v=3"
             alt=""
-            width="596"
-            height="523"
+            width="1788"
+            height="1569"
             draggable="false"
           />
           <img
             className="logo-word"
-            src="/assets/logo/phoenicia-word.png?v=2"
+            src="/assets/logo/phoenicia-word.png?v=4"
             alt=""
-            width="1172"
-            height="272"
+            width="3516"
+            height="816"
             draggable="false"
           />
         </NavLink>

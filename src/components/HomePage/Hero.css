@@ -141,7 +141,7 @@
   top: 24%;
   width: clamp(280px, 32vw, 440px);
   height: clamp(240px, 27vw, 380px);
-  animation: hero-rise 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both;
+  animation: hero-arrive 1.15s cubic-bezier(0.16, 1, 0.3, 1) 0.18s both;
 }
 
 .hero-globe {
@@ -150,6 +150,10 @@
   height: 100%;
   object-fit: contain;
   object-position: right center;
+  transform-origin: 42% 42%;
+  animation:
+    hero-bloom 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.18s both,
+    hero-live 7.5s ease-in-out 1.45s infinite;
 }
 
 @keyframes hero-rise {
@@ -171,6 +175,36 @@
   to {
     opacity: 1;
     transform: scaleX(1);
+  }
+}
+
+@keyframes hero-arrive {
+  from {
+    opacity: 0;
+    transform: translateY(22px) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes hero-bloom {
+  from {
+    clip-path: circle(10% at 42% 40%);
+  }
+  to {
+    clip-path: circle(140% at 46% 46%);
+  }
+}
+
+@keyframes hero-live {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.035);
   }
 }
 
@@ -303,9 +337,11 @@
   .hero-text,
   .hero-actions,
   .hero-logo,
-  .hero-art {
+  .hero-art,
+  .hero-globe {
     animation: none;
     opacity: 1;
     transform: none;
+    clip-path: none;
   }
 }
