@@ -14,7 +14,7 @@ const products = [
       "Multi-sector reach",
       "Fast turnaround hiring",
     ],
-    image: "/assets/images/teachwise-card.png?v=2",
+    image: "/assets/images/teachwise-card.png?v=6",
     url: "https://teachwise.co.uk",
   },
   {
@@ -30,7 +30,7 @@ const products = [
       "Production efficiency increase",
       "Global field deployment",
     ],
-    image: "/assets/images/petrovate-card.png?v=3",
+    image: "/assets/images/petrovate-card.png?v=7",
     url: "https://petrovate.co.uk",
   },
   {
@@ -46,7 +46,7 @@ const products = [
       "Secure banking",
       "Business solutions",
     ],
-    image: "/assets/images/cedar-bank-card.png?v=1",
+    image: "/assets/images/cedar-bank-card.png?v=6",
     url: "https://cedarcapitalbank.com",
   },
   {
@@ -62,7 +62,7 @@ const products = [
       "Employee portal",
       "Real-time reporting",
     ],
-    image: "/assets/images/cedar-payroll-card.png?v=1",
+    image: "/assets/images/cedar-payroll-card.png?v=6",
     url: "https://cedarpayroll.co.uk",
   },
 ];
@@ -70,11 +70,8 @@ const products = [
 export default function ProductsPageSection() {
   return (
     <section className="products-page">
-      {products.map((product, index) => (
-        <div
-          key={product.id}
-          className={`product-row ${index % 2 !== 0 ? "reverse" : ""}`}
-        >
+      {products.map((product) => (
+        <div key={product.id} className="product-row">
           <div className="product-image">
             <img src={product.image} alt={product.title} />
           </div>

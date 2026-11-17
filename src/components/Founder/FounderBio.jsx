@@ -36,7 +36,7 @@ export default function FounderBio() {
           </p>
 
           <p>
-            Across every venture, Ali insists on the same standard — clear products,
+            Across every venture, Ali insists on the same standard: clear products,
             principled operators, and a long-term ownership horizon. Phoenicia is
             not built to flip companies; it is built to steward them.
           </p>

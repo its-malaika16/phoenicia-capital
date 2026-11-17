@@ -8,7 +8,7 @@
   width: min(1140px, 100%);
   margin: 0 auto;
   display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(280px, 1.05fr);
+  grid-template-columns: minmax(0, 1.2fr) minmax(240px, 0.72fr);
   align-items: center;
   column-gap: clamp(20px, 3vw, 48px);
 }
@@ -65,7 +65,7 @@
 
 .product-art {
   position: relative;
-  width: min(100%, 560px);
+  width: min(100%, 360px);
   margin-left: auto;
 }
 
@@ -133,7 +133,7 @@
   }
 
   .product-art {
-    width: min(100%, 680px);
+    width: min(100%, 440px);
   }
 }
 
@@ -148,8 +148,9 @@
   }
 
   .product-art {
-    width: min(100%, 460px);
-    margin: 0 auto;
+    width: min(100%, 280px);
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
